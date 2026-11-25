@@ -1,4 +1,9 @@
+using System.Security.Claims;
 using ConcesionarioN.Data.Context;
+using ConcesionarioN.Services;
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -6,16 +11,71 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<ConcesionarioNDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("ConexionDB")));
 
-// Add services to the container.
+// Servicios de la aplicación
+builder.Services.AddScoped<IUsuarioService, UsuarioService>();
+
+// HU-01: autenticación por cookie
+builder.Services
+    .AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+    .AddCookie(options =>
+    {
+        options.LoginPath = "/Account/Login";
+        options.AccessDeniedPath = "/Account/AccessDenied";
+        options.ExpireTimeSpan = TimeSpan.FromHours(8);
+        options.SlidingExpiration = true;
+        options.Cookie.HttpOnly = true;
+
+        // HU-06: un usuario desactivado/eliminado (o con otro rol) pierde la sesión de inmediato.
+        options.Events = new CookieAuthenticationEvents
+        {
+            OnValidatePrincipal = async context =>
+            {
+                var idClaim = context.Principal?.FindFirstValue(ClaimTypes.NameIdentifier);
+                var rolClaim = context.Principal?.FindFirstValue(ClaimTypes.Role);
+
+                var valido = false;
+                if (int.TryParse(idClaim, out var id))
+                {
+                    var db = context.HttpContext.RequestServices.GetRequiredService<ConcesionarioNDbContext>();
+                    var datos = await db.Usuarios.AsNoTracking()
+                        .Where(u => u.Id == id)
+                        .Select(u => new { u.Activo, u.Rol })
+                        .FirstOrDefaultAsync();
+                    valido = datos != null && datos.Activo && datos.Rol == rolClaim;
+                }
+
+                if (!valido)
+                {
+                    context.RejectPrincipal();
+                    await context.HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
+                }
+            }
+        };
+    });
+
+// HU-01/CA-03: toda página exige sesión salvo las marcadas con [AllowAnonymous]
+builder.Services.AddAuthorization(options =>
+{
+    options.FallbackPolicy = new AuthorizationPolicyBuilder()
+        .RequireAuthenticatedUser()
+        .Build();
+});
+
 builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
+// Aplica migraciones pendientes y crea las cuentas de prueba la primera vez
+using (var scope = app.Services.CreateScope())
+{
+    var db = scope.ServiceProvider.GetRequiredService<ConcesionarioNDbContext>();
+    await db.Database.MigrateAsync();
+    await scope.ServiceProvider.GetRequiredService<IUsuarioService>().SembrarDatosInicialesAsync();
+}
+
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Home/Error");
-    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
 }
 
@@ -24,10 +84,11 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Vehiculos}/{action=Index}/{id?}");
+    pattern: "{controller=Home}/{action=Index}/{id?}");
 
 app.Run();

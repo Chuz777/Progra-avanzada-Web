@@ -1,8 +1,48 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
+@{
+    ViewData["Title"] = "Inicio";
+    var autenticado = User.Identity?.IsAuthenticated == true;
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="hero p-5 mb-4 text-center">
+    <h1 class="display-5 fw-bold">Concesionario<span class="text-red-custom">N</span></h1>
+    <p class="lead mb-4">Sistema de gestión para concesionaria de vehículos.</p>
+    @if (autenticado)
+    {
+        <p class="mb-0">Bienvenido, <strong>@User.Identity?.Name</strong>.</p>
+    }
+    else
+    {
+        <a class="btn btn-red-custom btn-lg me-2" asp-controller="Account" asp-action="Login">Iniciar sesión</a>
+        <a class="btn btn-outline-light btn-lg" asp-controller="Account" asp-action="Registro">Crear cuenta de cliente</a>
+    }
 </div>
+
+@if (autenticado)
+{
+    <div class="row g-3">
+        <div class="col-md-4">
+            <div class="card h-100"><div class="card-body">
+                <h5><i class="bi bi-car-front text-red-custom"></i> Catálogo</h5>
+                <p class="text-muted mb-2">Vehículos, motos y accesorios.</p>
+                <a asp-controller="Vehiculos" asp-action="Index" class="btn btn-sm btn-outline-red-custom">Ver vehículos</a>
+            </div></div>
+        </div>
+        <div class="col-md-4">
+            <div class="card h-100"><div class="card-body">
+                <h5><i class="bi bi-tools text-red-custom"></i> Taller</h5>
+                <p class="text-muted mb-2">Citas y recepción de vehículos.</p>
+                <a asp-controller="TallerCitas" asp-action="Index" class="btn btn-sm btn-outline-red-custom">Ir al taller</a>
+            </div></div>
+        </div>
+        @if (User.IsInRole(RolesSistema.Admin))
+        {
+            <div class="col-md-4">
+                <div class="card h-100"><div class="card-body">
+                    <h5><i class="bi bi-people text-red-custom"></i> Usuarios</h5>
+                    <p class="text-muted mb-2">Administre las cuentas y roles del sistema.</p>
+                    <a asp-controller="Usuarios" asp-action="Index" class="btn btn-sm btn-red-custom">Gestionar usuarios</a>
+                </div></div>
+            </div>
+        }
+    </div>
+}

@@ -1,1 +1,56 @@
-﻿
+@model RegistroDto
+@{
+    ViewData["Title"] = "Registro de cliente";
+}
+
+<div class="row justify-content-center">
+    <div class="col-md-8 col-lg-6">
+        <div class="card">
+            <div class="card-header card-header-black">
+                <h5 class="mb-0"><i class="bi bi-person-plus"></i> Registro de cliente</h5>
+            </div>
+            <div class="card-body p-4">
+                <form asp-action="Registro" method="post">
+                    <div asp-validation-summary="ModelOnly" class="alert alert-danger"></div>
+
+                    <div class="mb-3">
+                        <label asp-for="Nombre" class="form-label"></label>
+                        <input asp-for="Nombre" class="form-control" />
+                        <span asp-validation-for="Nombre" class="text-danger small"></span>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label asp-for="Cedula" class="form-label"></label>
+                            <input asp-for="Cedula" class="form-control" placeholder="1-2345-0678" />
+                            <span asp-validation-for="Cedula" class="text-danger small"></span>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label asp-for="Telefono" class="form-label"></label>
+                            <input asp-for="Telefono" class="form-control" placeholder="8888-1234" />
+                            <span asp-validation-for="Telefono" class="text-danger small"></span>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label asp-for="Email" class="form-label"></label>
+                        <input asp-for="Email" class="form-control" autocomplete="username" placeholder="correo@ejemplo.com" />
+                        <span asp-validation-for="Email" class="text-danger small"></span>
+                    </div>
+                    <div class="mb-4">
+                        <label asp-for="Password" class="form-label"></label>
+                        <input asp-for="Password" class="form-control" autocomplete="new-password" />
+                        <div class="form-text">Mínimo 8 caracteres e incluir al menos un número.</div>
+                        <span asp-validation-for="Password" class="text-danger small"></span>
+                    </div>
+                    <button type="submit" class="btn btn-red-custom w-100">Crear cuenta</button>
+                </form>
+            </div>
+            <div class="card-footer text-center bg-white">
+                ¿Ya tiene cuenta? <a asp-action="Login" class="text-red-custom">Inicie sesión</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
