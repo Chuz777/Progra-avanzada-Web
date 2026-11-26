@@ -1,48 +1,53 @@
+@model InicioDto
 @{
     ViewData["Title"] = "Inicio";
-    var autenticado = User.Identity?.IsAuthenticated == true;
 }
 
-<div class="hero p-5 mb-4 text-center">
-    <h1 class="display-5 fw-bold">Concesionario<span class="text-red-custom">N</span></h1>
-    <p class="lead mb-4">Sistema de gestión para concesionaria de vehículos.</p>
-    @if (autenticado)
+<div class="hero p-5 mb-5 text-center">
+    <h1 class="display-5 fw-bold mb-2">Concesionario<span class="text-red-custom">N</span></h1>
+    <p class="lead mb-0">Sistema de gestión para concesionaria de vehículos.</p>
+</div>
+
+<section class="mb-5">
+    <div class="d-flex justify-content-between align-items-center mb-3">
+        <h3 class="page-title mb-0">Vehículos destacados</h3>
+        <a asp-controller="Vehiculos" asp-action="Index" class="btn btn-sm btn-outline-red-custom">Ver todos</a>
+    </div>
+    @if (Model.Vehiculos.Any())
     {
-        <p class="mb-0">Bienvenido, <strong>@User.Identity?.Name</strong>.</p>
+        <div class="row g-3">
+            @foreach (var v in Model.Vehiculos)
+            {
+                <div class="col-sm-6 col-lg-3">
+                    <partial name="_TarjetaCatalogo" model="@(($"{v.Marca} {v.Modelo}", $"{v.Anio} · {v.Transmision}", v.Precio, v.Estado, v.ImagenUrl, "bi-car-front"))" />
+                </div>
+            }
+        </div>
     }
     else
     {
-        <a class="btn btn-red-custom btn-lg me-2" asp-controller="Account" asp-action="Login">Iniciar sesión</a>
-        <a class="btn btn-outline-light btn-lg" asp-controller="Account" asp-action="Registro">Crear cuenta de cliente</a>
+        <div class="card"><div class="card-body text-center text-muted py-4">Pronto publicaremos nuestros vehículos disponibles.</div></div>
     }
-</div>
+</section>
 
-@if (autenticado)
-{
-    <div class="row g-3">
-        <div class="col-md-4">
-            <div class="card h-100"><div class="card-body">
-                <h5><i class="bi bi-car-front text-red-custom"></i> Catálogo</h5>
-                <p class="text-muted mb-2">Vehículos, motos y accesorios.</p>
-                <a asp-controller="Vehiculos" asp-action="Index" class="btn btn-sm btn-outline-red-custom">Ver vehículos</a>
-            </div></div>
-        </div>
-        <div class="col-md-4">
-            <div class="card h-100"><div class="card-body">
-                <h5><i class="bi bi-tools text-red-custom"></i> Taller</h5>
-                <p class="text-muted mb-2">Citas y recepción de vehículos.</p>
-                <a asp-controller="TallerCitas" asp-action="Index" class="btn btn-sm btn-outline-red-custom">Ir al taller</a>
-            </div></div>
-        </div>
-        @if (User.IsInRole(RolesSistema.Admin))
-        {
-            <div class="col-md-4">
-                <div class="card h-100"><div class="card-body">
-                    <h5><i class="bi bi-people text-red-custom"></i> Usuarios</h5>
-                    <p class="text-muted mb-2">Administre las cuentas y roles del sistema.</p>
-                    <a asp-controller="Usuarios" asp-action="Index" class="btn btn-sm btn-red-custom">Gestionar usuarios</a>
-                </div></div>
-            </div>
-        }
+<section class="mb-4">
+    <div class="d-flex justify-content-between align-items-center mb-3">
+        <h3 class="page-title mb-0">Motos destacadas</h3>
+        <a asp-controller="Motos" asp-action="Index" class="btn btn-sm btn-outline-red-custom">Ver todas</a>
     </div>
-}
+    @if (Model.Motos.Any())
+    {
+        <div class="row g-3">
+            @foreach (var m in Model.Motos)
+            {
+                <div class="col-sm-6 col-lg-3">
+                    <partial name="_TarjetaCatalogo" model="@(($"{m.Marca} {m.Modelo}", $"{m.Anio} · {m.CilindrajeCC} cc", m.Precio, m.Estado, m.ImagenUrl, "bi-bicycle"))" />
+                </div>
+            }
+        </div>
+    }
+    else
+    {
+        <div class="card"><div class="card-body text-center text-muted py-4">Pronto publicaremos nuestras motos disponibles.</div></div>
+    }
+</section>

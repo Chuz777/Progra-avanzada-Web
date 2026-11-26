@@ -111,3 +111,11 @@ body {
   color: #adb5bd;
   border-top: 3px solid var(--color-rojo);
 }
+
+/* Tarjetas de catálogo (inicio, vehículos y motos) */
+.catalogo-card { overflow: hidden; transition: transform .15s ease, box-shadow .15s ease; }
+.catalogo-card:hover { transform: translateY(-3px); box-shadow: 0 6px 16px rgba(0,0,0,.15); }
+.catalogo-img-wrap { position: relative; height: 180px; background: #e4e6ea; }
+.catalogo-img, .catalogo-placeholder { position: absolute; inset: 0; width: 100%; height: 100%; }
+.catalogo-img { object-fit: cover; }
+.catalogo-placeholder { display: flex; align-items: center; justify-content: center; font-size: 3.5rem; color: #adb5bd; }

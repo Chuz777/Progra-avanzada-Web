@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using ConcesionarioN.Data.Context;
 using ConcesionarioN.Models;
@@ -14,6 +15,7 @@ namespace ConcesionarioN.Controllers
             _context = context;
         }
 
+        [AllowAnonymous]
         public async Task<IActionResult> Index() => View(await _context.Vehiculos.ToListAsync());
 
         public IActionResult Create() => View();

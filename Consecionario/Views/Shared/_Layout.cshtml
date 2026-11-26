@@ -22,11 +22,11 @@
                 </button>
                 <div class="collapse navbar-collapse" id="menuPrincipal">
                     <ul class="navbar-nav me-auto">
+                        <li class="nav-item"><a class="nav-link" asp-controller="Home" asp-action="Index"><i class="bi bi-house"></i> Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" asp-controller="Vehiculos" asp-action="Index"><i class="bi bi-car-front"></i> Vehículos</a></li>
+                        <li class="nav-item"><a class="nav-link" asp-controller="Motos" asp-action="Index"><i class="bi bi-bicycle"></i> Motos</a></li>
                         @if (User.Identity?.IsAuthenticated == true)
                         {
-                            <li class="nav-item"><a class="nav-link" asp-controller="Home" asp-action="Index"><i class="bi bi-house"></i> Inicio</a></li>
-                            <li class="nav-item"><a class="nav-link" asp-controller="Vehiculos" asp-action="Index"><i class="bi bi-car-front"></i> Vehículos</a></li>
-                            <li class="nav-item"><a class="nav-link" asp-controller="Motos" asp-action="Index"><i class="bi bi-bicycle"></i> Motos</a></li>
                             <li class="nav-item"><a class="nav-link" asp-controller="Accesorios" asp-action="Index"><i class="bi bi-gear"></i> Accesorios</a></li>
                             <li class="nav-item"><a class="nav-link" asp-controller="TallerCitas" asp-action="Index"><i class="bi bi-tools"></i> Taller</a></li>
                             @if (User.IsInRole(RolesSistema.Admin) || User.IsInRole(RolesSistema.Dependiente))
