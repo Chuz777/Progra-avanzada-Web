@@ -36,6 +36,29 @@
                             @if (User.IsInRole(RolesSistema.Admin))
                             {
                                 <li class="nav-item"><a class="nav-link" asp-controller="Usuarios" asp-action="Index"><i class="bi bi-people"></i> Usuarios</a></li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle text-red-custom fw-semibold" href="#" id="menuAgregar" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="bi bi-plus-circle-fill"></i> Agregar
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-menu-dark border-danger" aria-labelledby="menuAgregar">
+                                        <li>
+                                            <a class="dropdown-item" asp-controller="Home" asp-action="CrearItem" asp-route-tipo="Vehiculo">
+                                                <i class="bi bi-car-front text-red-custom"></i> Nuevo Vehículo
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" asp-controller="Home" asp-action="CrearItem" asp-route-tipo="Moto">
+                                                <i class="bi bi-bicycle text-red-custom"></i> Nueva Moto
+                                            </a>
+                                        </li>
+                                        <li><hr class="dropdown-divider border-secondary" /></li>
+                                        <li>
+                                            <a class="dropdown-item" asp-controller="Home" asp-action="CrearItem" asp-route-tipo="Accesorio">
+                                                <i class="bi bi-gear text-red-custom"></i> Nuevo Accesorio
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
                             }
                         }
                     </ul>
@@ -86,7 +109,7 @@
 
     <footer class="footer">
         <div class="container">
-            &copy; 2026 - Concesionario<span class="text-red-custom">N</span> - SC-701 Programación Avanzada en Web
+            © 2026 - Concesionario<span class="text-red-custom">N</span> - SC-701 Programación Avanzada en Web
         </div>
     </footer>
 

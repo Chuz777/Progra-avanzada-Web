@@ -15,5 +15,6 @@ namespace ConcesionarioN.Models
 
         [Required]
         public int Stock { get; set; }
+        public string ImagenUrl { get; set; } = string.Empty;
     }
 }

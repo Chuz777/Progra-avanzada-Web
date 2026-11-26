@@ -19,7 +19,7 @@
             @foreach (var v in Model.Vehiculos)
             {
                 <div class="col-sm-6 col-lg-3">
-                    <partial name="_TarjetaCatalogo" model="@(($"{v.Marca} {v.Modelo}", $"{v.Anio} · {v.Transmision}", v.Precio, v.Estado, v.ImagenUrl, "bi-car-front"))" />
+                    <partial name="_TarjetaCatalogo" model="@(v.Id, "Vehiculos", $"{v.Marca} {v.Modelo}", $"{v.Anio} · {v.Transmision}", v.Precio, v.Estado, v.ImagenUrl, "bi-car-front")" />
                 </div>
             }
         </div>
@@ -41,7 +41,7 @@
             @foreach (var m in Model.Motos)
             {
                 <div class="col-sm-6 col-lg-3">
-                    <partial name="_TarjetaCatalogo" model="@(($"{m.Marca} {m.Modelo}", $"{m.Anio} · {m.CilindrajeCC} cc", m.Precio, m.Estado, m.ImagenUrl, "bi-bicycle"))" />
+                    <partial name="_TarjetaCatalogo" model="@(m.Id, "Motos", $"{m.Marca} {m.Modelo}", $"{m.Anio} · {m.CilindrajeCC} cc", m.Precio, m.Estado, m.ImagenUrl, "bi-bicycle")" />
                 </div>
             }
         </div>

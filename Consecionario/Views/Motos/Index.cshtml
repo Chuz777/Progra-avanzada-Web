@@ -3,7 +3,15 @@
     ViewData["Title"] = "Motos";
 }
 
-<h2 class="page-title mb-4">Motos</h2>
+<div class="d-flex justify-content-between align-items-center mb-4">
+    <h2 class="page-title mb-0">Motos</h2>
+    @if (User.IsInRole(RolesSistema.Admin))
+    {
+        <a asp-controller="Home" asp-action="CrearItem" asp-route-tipo="Moto" class="btn btn-sm btn-red-custom">
+            <i class="bi bi-plus-circle"></i> Nueva Moto
+        </a>
+    }
+</div>
 
 @if (!Model.Any())
 {
@@ -15,7 +23,7 @@ else
         @foreach (var m in Model)
         {
             <div class="col-sm-6 col-lg-3">
-                <partial name="_TarjetaCatalogo" model="@(($"{m.Marca} {m.Modelo}", $"{m.Anio} · {m.CilindrajeCC} cc", m.Precio, m.Estado, m.ImagenUrl, "bi-bicycle"))" />
+                <partial name="_TarjetaCatalogo" model="@(m.Id, "Motos", $"{m.Marca} {m.Modelo}", $"{m.Anio} · {m.CilindrajeCC} cc", m.Precio, m.Estado, m.ImagenUrl, "bi-bicycle")" />
             </div>
         }
     </div>
