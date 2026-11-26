@@ -1,5 +1,22 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
+@model IEnumerable<Moto>
 @{
+    ViewData["Title"] = "Motos";
+}
+
+<h2 class="page-title mb-4">Motos</h2>
+
+@if (!Model.Any())
+{
+    <div class="card"><div class="card-body text-center text-muted py-5">Aún no hay motos registradas.</div></div>
+}
+else
+{
+    <div class="row g-3">
+        @foreach (var m in Model)
+        {
+            <div class="col-sm-6 col-lg-3">
+                <partial name="_TarjetaCatalogo" model="@(($"{m.Marca} {m.Modelo}", $"{m.Anio} · {m.CilindrajeCC} cc", m.Precio, m.Estado, m.ImagenUrl, "bi-bicycle"))" />
+            </div>
+        }
+    </div>
 }

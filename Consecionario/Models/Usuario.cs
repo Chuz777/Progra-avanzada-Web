@@ -1,4 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations;
 
 namespace ConcesionarioN.Models
 {
@@ -11,22 +11,29 @@ namespace ConcesionarioN.Models
         [StringLength(100)]
         public string Nombre { get; set; } = string.Empty;
 
-        [Required(ErrorMessage = "El nombre de usuario es obligatorio")]
-        [StringLength(50)]
-        public string NombreUsuario { get; set; } = string.Empty;
+        // Obligatoria al registrarse como cliente (HU-02); opcional para personal (HU-03).
+        [StringLength(15)]
+        public string? Cedula { get; set; }
 
         [Required(ErrorMessage = "El correo es obligatorio")]
         [EmailAddress]
+        [StringLength(150)]
         public string Email { get; set; } = string.Empty;
 
-        [Required(ErrorMessage = "El número de teléfono es obligatorio")]
-        [Phone]
-        public string Telefono { get; set; } = string.Empty;
-
-        [Required(ErrorMessage = "La contraseña es obligatoria")]
-        public string PasswordHash { get; set; } = string.Empty;
+        [StringLength(15)]
+        public string? Telefono { get; set; }
 
         [Required]
-        public string Rol { get; set; } = "Cliente"; // "Admin", "Dependiente", "Cliente"
+        public string PasswordHash { get; set; } = string.Empty;
+
+        // "Admin", "Dependiente" o "Cliente" (ver Validations/RolesSistema.cs)
+        [Required]
+        [StringLength(20)]
+        public string Rol { get; set; } = "Cliente";
+
+        // HU-06: un usuario con movimientos se desactiva en lugar de eliminarse.
+        public bool Activo { get; set; } = true;
+
+        public DateTime FechaCreacion { get; set; } = DateTime.Now;
     }
 }

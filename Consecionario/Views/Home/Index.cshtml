@@ -1,8 +1,53 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
+@model InicioDto
+@{
+    ViewData["Title"] = "Inicio";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="hero p-5 mb-5 text-center">
+    <h1 class="display-5 fw-bold mb-2">Concesionario<span class="text-red-custom">N</span></h1>
+    <p class="lead mb-0">Sistema de gestión para concesionaria de vehículos.</p>
 </div>
+
+<section class="mb-5">
+    <div class="d-flex justify-content-between align-items-center mb-3">
+        <h3 class="page-title mb-0">Vehículos destacados</h3>
+        <a asp-controller="Vehiculos" asp-action="Index" class="btn btn-sm btn-outline-red-custom">Ver todos</a>
+    </div>
+    @if (Model.Vehiculos.Any())
+    {
+        <div class="row g-3">
+            @foreach (var v in Model.Vehiculos)
+            {
+                <div class="col-sm-6 col-lg-3">
+                    <partial name="_TarjetaCatalogo" model="@(($"{v.Marca} {v.Modelo}", $"{v.Anio} · {v.Transmision}", v.Precio, v.Estado, v.ImagenUrl, "bi-car-front"))" />
+                </div>
+            }
+        </div>
+    }
+    else
+    {
+        <div class="card"><div class="card-body text-center text-muted py-4">Pronto publicaremos nuestros vehículos disponibles.</div></div>
+    }
+</section>
+
+<section class="mb-4">
+    <div class="d-flex justify-content-between align-items-center mb-3">
+        <h3 class="page-title mb-0">Motos destacadas</h3>
+        <a asp-controller="Motos" asp-action="Index" class="btn btn-sm btn-outline-red-custom">Ver todas</a>
+    </div>
+    @if (Model.Motos.Any())
+    {
+        <div class="row g-3">
+            @foreach (var m in Model.Motos)
+            {
+                <div class="col-sm-6 col-lg-3">
+                    <partial name="_TarjetaCatalogo" model="@(($"{m.Marca} {m.Modelo}", $"{m.Anio} · {m.CilindrajeCC} cc", m.Precio, m.Estado, m.ImagenUrl, "bi-bicycle"))" />
+                </div>
+            }
+        </div>
+    }
+    else
+    {
+        <div class="card"><div class="card-body text-center text-muted py-4">Pronto publicaremos nuestras motos disponibles.</div></div>
+    }
+</section>
