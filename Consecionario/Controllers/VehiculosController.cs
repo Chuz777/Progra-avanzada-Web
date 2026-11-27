@@ -55,12 +55,26 @@ namespace ConcesionarioN.Controllers
             return View(vehiculo);
         }
 
-        public async Task<IActionResult> Details(int? id)
+        public async Task<IActionResult> Detalles(int? id)
         {
             if (id == null) return NotFound();
             var vehiculo = await _context.Vehiculos.FirstOrDefaultAsync(m => m.Id == id);
             if (vehiculo == null) return NotFound();
             return View(vehiculo);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Delete(int id)
+        {
+            var vehiculo = await _context.Vehiculos.FindAsync(id);
+            if (vehiculo != null)
+            {
+                _context.Vehiculos.Remove(vehiculo);
+                await _context.SaveChangesAsync();
+                TempData["Exito"] = "Vehículo eliminado correctamente.";
+            }
+            return RedirectToAction(nameof(Index));
         }
     }
 }

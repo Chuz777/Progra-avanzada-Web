@@ -1,5 +1,32 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
+﻿@model IEnumerable<Accesorio>
 @{
+    ViewData["Title"] = "Accesorios";
+}
+
+<div class="d-flex justify-content-between align-items-center mb-4">
+    <h2 class="page-title mb-0">Accesorios</h2>
+    @if (User.IsInRole(RolesSistema.Admin) || User.IsInRole(RolesSistema.Dependiente))
+    {
+        <a asp-controller="Home" asp-action="CrearItem" asp-route-tipo="Accesorio" class="btn btn-sm btn-red-custom">
+            <i class="bi bi-plus-circle"></i> Nuevo Accesorio
+        </a>
+    }
+</div>
+
+@if (!Model.Any())
+{
+    <div class="card"><div class="card-body text-center text-muted py-5">Aún no hay accesorios registrados.</div></div>
+}
+else
+{
+    <div class="row g-3">
+        @foreach (var a in Model)
+        {
+            var estadoStock = a.Stock > 0 ? $"Stock: {a.Stock}" : "Agotado";
+            var estadoBadge = a.Stock > 0 ? "Disponible" : "Agotado";
+            <div class="col-sm-6 col-lg-3">
+                <partial name="_TarjetaCatalogo" model="@(a.Id, "Accesorios", a.Nombre, estadoStock, a.Precio, estadoBadge, a.ImagenUrl, "bi-gear")" />
+            </div>
+        }
+    </div>
 }

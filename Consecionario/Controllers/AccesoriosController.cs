@@ -60,6 +60,22 @@ namespace ConcesionarioN.Controllers
             return View(accesorio);
         }
 
+
+        public async Task<IActionResult> Detalles(int? id)
+        {
+            if (id == null) return NotFound();
+
+            var accesorio = await _context.Accesorios
+                .AsNoTracking()
+                .FirstOrDefaultAsync(v => v.Id == id);
+
+            if (accesorio == null) return NotFound();
+
+            return View(accesorio);
+        }
+
+
+
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null) return NotFound();
