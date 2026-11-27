@@ -20,7 +20,7 @@
         <h6 class="mb-1">@Model.Titulo</h6>
         <p class="text-muted small mb-2">@Model.Subtitulo</p>
         <div class="d-flex justify-content-between align-items-center mt-auto">
-            <strong class="text-red-custom">@Model.Precio.ToString("C0", new System.Globalization.CultureInfo("es-CR"))</strong>
+            <strong class="text-red-custom">@Model.Precio.ToString("C0", new System.Globalization.CultureInfo("en-US"))</strong>
             <span class="badge @(Model.Estado == "Disponible" ? "bg-success" : "bg-secondary")">@Model.Estado</span>
         </div>
     </div>

@@ -1,7 +1,7 @@
 @model Venta
 @{
     ViewData["Title"] = $"Venta #{Model.Id}";
-    var cr = new System.Globalization.CultureInfo("es-CR");
+    var cr = new System.Globalization.CultureInfo("en-US");
 }
 
 <div class="row justify-content-center">
@@ -21,7 +21,7 @@
                     <dt class="col-sm-4">Producto</dt><dd class="col-sm-8">@Model.Descripcion</dd>
                     <dt class="col-sm-4">Método de pago</dt><dd class="col-sm-8">@Model.MetodoPago</dd>
                     <dt class="col-sm-4">Notas</dt><dd class="col-sm-8">@(string.IsNullOrWhiteSpace(Model.Notas) ? "—" : Model.Notas)</dd>
-                    <dt class="col-sm-4">Total</dt><dd class="col-sm-8"><strong class="text-red-custom">@Model.TotalVenta.ToString("C0", cr)</strong></dd>
+                    <dt class="col-sm-4">Total</dt><dd class="col-sm-8"><strong class="text-red-custom">@Model.TotalVenta.ToString("C2", cr)</strong></dd>
                     @if (Model.Anulada)
                     {
                         <dt class="col-sm-4">Anulada el</dt><dd class="col-sm-8">@Model.FechaAnulacion?.ToString("dd/MM/yyyy HH:mm")</dd>
@@ -40,8 +40,8 @@
                                     <tr>
                                         <td>@(l.Accesorio?.Nombre ?? "—")</td>
                                         <td class="text-end">@l.Cantidad</td>
-                                        <td class="text-end">@l.PrecioUnitario.ToString("C0", cr)</td>
-                                        <td class="text-end">@l.Subtotal.ToString("C0", cr)</td>
+                                        <td class="text-end">@l.PrecioUnitario.ToString("C2", cr)</td>
+                                        <td class="text-end">@l.Subtotal.ToString("C2", cr)</td>
                                     </tr>
                                 }
                             </tbody>

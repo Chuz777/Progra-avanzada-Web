@@ -3,7 +3,7 @@
     var f = (FiltroVentasDto)ViewBag.Filtro;
     bool esPersonal = ViewBag.EsPersonal;
     ViewData["Title"] = esPersonal ? "Ventas" : "Mis compras";
-    var cr = new System.Globalization.CultureInfo("es-CR");
+    var cr = new System.Globalization.CultureInfo("en-US");
     var totalListado = Model.Where(v => !v.Anulada).Sum(v => v.TotalVenta);
 }
 
@@ -78,7 +78,7 @@
                         <td class="text-nowrap">@v.FechaVenta.ToString("dd/MM/yyyy HH:mm")</td>
                         <td>@v.ClienteNombre</td>
                         <td>@v.Descripcion</td>
-                        <td class="text-end text-nowrap">@v.TotalVenta.ToString("C0", cr)</td>
+                        <td class="text-end text-nowrap">@v.TotalVenta.ToString("C2", cr)</td>
                         <td>@(v.Vendedor?.Nombre ?? "—")</td>
                         <td>
                             @if (v.Anulada) { <span class="badge bg-secondary">Anulada</span> }
@@ -92,6 +92,6 @@
     </div>
     <div class="card-footer bg-white d-flex justify-content-between">
         <span class="text-muted small">@Model.Count venta(s)</span>
-        <strong>Total (sin anuladas): @totalListado.ToString("C0", cr)</strong>
+        <strong>Total (sin anuladas): @totalListado.ToString("C2", cr)</strong>
     </div>
 </div>
