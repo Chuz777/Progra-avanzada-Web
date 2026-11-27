@@ -1,0 +1,31 @@
+@model int?
+@{
+    // HU-23/CA-01: calendario con los horarios libres del día elegido
+    var horarios = (List<HorarioItem>)ViewBag.Horarios;
+    var dia = (DateTime)ViewBag.Dia;
+}
+<label class="form-label d-block">Horario</label>
+@if (!horarios.Any())
+{
+    <div class="alert alert-secondary py-2 mb-0">El taller atiende de lunes a viernes. Elija otro día.</div>
+}
+else if (!horarios.Any(h => h.Libre))
+{
+    <div class="alert alert-secondary py-2 mb-0">No hay horarios libres el @dia.ToString("dd/MM/yyyy"). Elija otro día.</div>
+}
+else
+{
+    <div class="d-flex flex-wrap gap-2">
+        @foreach (var h in horarios)
+        {
+            var id = $"hora{h.FechaHora.Hour}";
+            <input type="radio" class="btn-check" name="Hora" id="@id" value="@h.FechaHora.Hour" autocomplete="off"
+                   disabled="@(!h.Libre)" checked="@(h.Libre && Model == h.FechaHora.Hour)" />
+            <label class="btn btn-sm @(h.Libre ? "btn-outline-success" : "btn-outline-secondary")" for="@id"
+                   title="@(h.Libre ? "Libre" : "No disponible")">
+                @h.FechaHora.ToString("HH:mm")@(h.Libre ? "" : " · no disponible")
+            </label>
+        }
+    </div>
+}
+@Html.ValidationMessage("Hora", null, new { @class = "text-danger small d-block mt-1" })

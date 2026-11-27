@@ -55,6 +55,56 @@ namespace ConcesionarioN.Migrations
                     b.ToTable("Accesorios");
                 });
 
+            modelBuilder.Entity("ConcesionarioN.Models.CitaIngreso", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("ClienteId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("ClienteNombre")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.Property<string>("Estado")
+                        .IsRequired()
+                        .HasMaxLength(20)
+                        .HasColumnType("nvarchar(20)");
+
+                    b.Property<DateTime?>("FechaCancelacion")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("FechaCreacion")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("FechaHora")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Motivo")
+                        .HasMaxLength(300)
+                        .HasColumnType("nvarchar(300)");
+
+                    b.Property<string>("PlacaVehiculo")
+                        .IsRequired()
+                        .HasMaxLength(10)
+                        .HasColumnType("nvarchar(10)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ClienteId");
+
+                    b.HasIndex("FechaHora")
+                        .IsUnique()
+                        .HasFilter("[Estado] = N'Programada'");
+
+                    b.ToTable("CitasIngreso");
+                });
+
             modelBuilder.Entity("ConcesionarioN.Models.Moto", b =>
                 {
                     b.Property<int>("Id")
@@ -146,7 +196,6 @@ namespace ConcesionarioN.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("ClienteEmail")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ClienteNombre")
@@ -154,7 +203,6 @@ namespace ConcesionarioN.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ClienteTelefono")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("DescripcionProblema")
@@ -165,7 +213,14 @@ namespace ConcesionarioN.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime>("FechaCita")
+                    b.Property<string>("EstadoVehiculo")
+                        .HasMaxLength(300)
+                        .HasColumnType("nvarchar(300)");
+
+                    b.Property<DateTime?>("FechaCambioEstado")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("FechaIngreso")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("PlacaVehiculo")
@@ -375,6 +430,17 @@ namespace ConcesionarioN.Migrations
                     b.ToTable("VentaLineas");
                 });
 
+            modelBuilder.Entity("ConcesionarioN.Models.CitaIngreso", b =>
+                {
+                    b.HasOne("ConcesionarioN.Models.Usuario", "Cliente")
+                        .WithMany()
+                        .HasForeignKey("ClienteId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.Navigation("Cliente");
+                });
+
             modelBuilder.Entity("ConcesionarioN.Models.Reserva", b =>
                 {
                     b.HasOne("ConcesionarioN.Models.Vehiculo", "Vehiculo")
@@ -390,7 +456,8 @@ namespace ConcesionarioN.Migrations
                 {
                     b.HasOne("ConcesionarioN.Models.Usuario", "Usuario")
                         .WithMany()
-                        .HasForeignKey("UsuarioId");
+                        .HasForeignKey("UsuarioId")
+                        .OnDelete(DeleteBehavior.Restrict);
 
                     b.Navigation("Usuario");
                 });

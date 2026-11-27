@@ -15,6 +15,7 @@ builder.Services.AddDbContext<ConcesionarioNDbContext>(options =>
 builder.Services.AddScoped<IUsuarioService, UsuarioService>();
 builder.Services.AddScoped<ICatalogoService, CatalogoService>();
 builder.Services.AddScoped<IVentaService, VentaService>();
+builder.Services.AddScoped<IMecanicaService, MecanicaService>();
 
 // HU-01: autenticación por cookie
 builder.Services

@@ -1,0 +1,53 @@
+@model CitaDto
+@{
+    var cita = (CitaIngreso)ViewBag.Cita;
+    var dia = (DateTime)ViewBag.Dia;
+    ViewData["Title"] = "Reprogramar cita";
+}
+
+<div class="row justify-content-center">
+    <div class="col-md-10 col-lg-8">
+        <div class="card">
+            <div class="card-header card-header-black">
+                <h5 class="mb-0"><i class="bi bi-calendar-event"></i> Reprogramar cita</h5>
+            </div>
+            <div class="card-body p-4">
+                <p class="text-muted small mb-3">
+                    @cita.ClienteNombre · @cita.PlacaVehiculo · cita actual: <strong>@cita.FechaHora.ToString("dd/MM/yyyy HH:mm")</strong>
+                </p>
+                <form asp-action="Reprogramar" asp-route-id="@cita.Id" method="post">
+                    <div asp-validation-summary="ModelOnly" class="alert alert-danger"></div>
+
+                    <div class="mb-3 col-md-6 px-0">
+                        <label asp-for="Fecha" class="form-label">Nueva fecha</label>
+                        <input type="date" id="fecha" name="Fecha" value="@dia.ToString("yyyy-MM-dd")"
+                               min="@DateTime.Today.ToString("yyyy-MM-dd")" class="form-control" />
+                        <span asp-validation-for="Fecha" class="text-danger small"></span>
+                    </div>
+
+                    <div class="mb-4">
+                        <partial name="_Horarios" model="Model.Hora" />
+                    </div>
+
+                    <div class="d-flex gap-2">
+                        <button type="submit" class="btn btn-red-custom">Guardar nuevo horario</button>
+                        <a asp-action="Agenda" asp-route-fecha="@cita.FechaHora.ToString("yyyy-MM-dd")" class="btn btn-outline-secondary">Cancelar</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        // Al cambiar la fecha se recargan los horarios libres de ese día
+        const fecha = document.getElementById("fecha");
+        fecha.addEventListener("change", function () {
+            if (!fecha.value) return;
+            const url = new URL(window.location.href.split("?")[0], window.location.origin);
+            url.searchParams.set("fecha", fecha.value);
+            window.location.href = url.toString();
+        });
+    </script>
+}

@@ -28,7 +28,26 @@
                         @if (User.Identity?.IsAuthenticated == true)
                         {
                             <li class="nav-item"><a class="nav-link" asp-controller="Accesorios" asp-action="Index"><i class="bi bi-gear"></i> Accesorios</a></li>
-                            <li class="nav-item"><a class="nav-link" asp-controller="TallerCitas" asp-action="Index"><i class="bi bi-tools"></i> Taller</a></li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="menuTaller" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="bi bi-tools"></i> Taller
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-dark border-danger" aria-labelledby="menuTaller">
+                                    @if (User.IsInRole(RolesSistema.Cliente))
+                                    {
+                                        <li><a class="dropdown-item" asp-controller="Mecanica" asp-action="Index"><i class="bi bi-car-front text-red-custom"></i> Mis vehículos en taller</a></li>
+                                        <li><a class="dropdown-item" asp-controller="Mecanica" asp-action="Agenda" asp-route-vista="semana"><i class="bi bi-calendar-week text-red-custom"></i> Mis citas</a></li>
+                                    }
+                                    else
+                                    {
+                                        <li><a class="dropdown-item" asp-controller="Mecanica" asp-action="Index"><i class="bi bi-list-check text-red-custom"></i> Recepciones</a></li>
+                                        <li><a class="dropdown-item" asp-controller="Mecanica" asp-action="Crear"><i class="bi bi-box-arrow-in-down text-red-custom"></i> Recibir vehículo</a></li>
+                                        <li><a class="dropdown-item" asp-controller="Mecanica" asp-action="Agenda"><i class="bi bi-calendar-week text-red-custom"></i> Agenda</a></li>
+                                    }
+                                    <li><hr class="dropdown-divider border-secondary" /></li>
+                                    <li><a class="dropdown-item" asp-controller="Mecanica" asp-action="Agendar"><i class="bi bi-calendar-plus text-red-custom"></i> Agendar cita</a></li>
+                                </ul>
+                            </li>
                             <li class="nav-item"><a class="nav-link" asp-controller="Ventas" asp-action="Index"><i class="bi bi-cash-coin"></i> @(User.IsInRole(RolesSistema.Cliente) ? "Mis compras" : "Ventas")</a></li>
                             @if (User.IsInRole(RolesSistema.Admin))
                             {

@@ -16,6 +16,7 @@ namespace ConcesionarioN.Data.Context
         public DbSet<Venta> Ventas { get; set; }
         public DbSet<VentaLinea> VentaLineas { get; set; }
         public DbSet<TallerCita> TallerCitas { get; set; }
+        public DbSet<CitaIngreso> CitasIngreso { get; set; }
         public DbSet<Reserva> Reservas { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -28,6 +29,12 @@ namespace ConcesionarioN.Data.Context
             modelBuilder.Entity<Venta>().HasOne(v => v.Moto).WithMany().HasForeignKey(v => v.MotoId).OnDelete(DeleteBehavior.Restrict);
             modelBuilder.Entity<VentaLinea>().HasOne(l => l.Venta).WithMany(v => v.Lineas).HasForeignKey(l => l.VentaId).OnDelete(DeleteBehavior.Cascade);
             modelBuilder.Entity<VentaLinea>().HasOne(l => l.Accesorio).WithMany().HasForeignKey(l => l.AccesorioId).OnDelete(DeleteBehavior.Restrict);
+
+            // Módulo 4: Mecánica
+            modelBuilder.Entity<TallerCita>().HasOne(t => t.Usuario).WithMany().HasForeignKey(t => t.UsuarioId).OnDelete(DeleteBehavior.Restrict);
+            modelBuilder.Entity<CitaIngreso>().HasOne(c => c.Cliente).WithMany().HasForeignKey(c => c.ClienteId).OnDelete(DeleteBehavior.Restrict);
+            // HU-23/CA-02: no puede haber dos citas programadas en el mismo horario
+            modelBuilder.Entity<CitaIngreso>().HasIndex(c => c.FechaHora).IsUnique().HasFilter("[Estado] = N'Programada'");
         }
     }
 }

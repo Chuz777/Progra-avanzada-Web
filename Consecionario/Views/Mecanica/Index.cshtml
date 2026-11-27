@@ -1,5 +1,83 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
+@model List<TallerCita>
 @{
+    var f = (FiltroRecepcionesDto)ViewBag.Filtro;
+    bool esPersonal = ViewBag.EsPersonal;
+    ViewData["Title"] = esPersonal ? "Recepciones de taller" : "Mis vehículos en taller";
 }
+
+<div class="d-flex justify-content-between align-items-center mb-4 flex-wrap gap-2">
+    <h2 class="page-title mb-0">@(esPersonal ? "Recepciones de taller" : "Mis vehículos en taller")</h2>
+    <div class="d-flex gap-2">
+        @if (esPersonal)
+        {
+            <a asp-action="Crear" class="btn btn-sm btn-red-custom"><i class="bi bi-box-arrow-in-down"></i> Recibir vehículo</a>
+        }
+        <a asp-action="Agenda" class="btn btn-sm btn-outline-red-custom"><i class="bi bi-calendar-week"></i> Agenda de citas</a>
+    </div>
+</div>
+
+<div class="card mb-4">
+    <div class="card-body">
+        <form asp-action="Index" method="get" class="row g-2 align-items-end">
+            <div class="col-md-3">
+                <label class="form-label" for="Estado">Estado</label>
+                <select id="Estado" name="Estado" class="form-select">
+                    <option value="">Todos</option>
+                    @foreach (var e in EstadosTaller.Todos)
+                    {
+                        <option value="@e" selected="@(f.Estado == e)">@e</option>
+                    }
+                </select>
+            </div>
+            <div class="col-md-3">
+                <label class="form-label" for="Placa">Placa</label>
+                <input type="text" id="Placa" name="Placa" value="@f.Placa" class="form-control" placeholder="Ej. BCD123" />
+            </div>
+            <div class="col-md-3 d-flex gap-2">
+                <button type="submit" class="btn btn-red-custom flex-fill"><i class="bi bi-funnel"></i> Filtrar</button>
+                <a asp-action="Index" class="btn btn-outline-secondary">Limpiar</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="card">
+    <div class="table-responsive">
+        <table class="table table-hover align-middle mb-0">
+            <thead>
+                <tr>
+                    <th>Recepción</th>
+                    <th>Ingreso</th>
+                    @if (esPersonal) { <th>Cliente</th> }
+                    <th>Placa</th>
+                    <th>Problema</th>
+                    <th>Estado</th>
+                    <th>Último cambio</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (!Model.Any())
+                {
+                    <tr><td colspan="8" class="text-center text-muted py-4">No se encontraron recepciones.</td></tr>
+                }
+                @foreach (var r in Model)
+                {
+                    <tr>
+                        <td class="text-nowrap">REC-@r.Id.ToString("000")</td>
+                        <td class="text-nowrap">@r.FechaIngreso.ToString("dd/MM/yyyy HH:mm")</td>
+                        @if (esPersonal) { <td>@r.ClienteNombre</td> }
+                        <td class="text-nowrap">@r.PlacaVehiculo</td>
+                        <td>@(r.DescripcionProblema.Length > 60 ? r.DescripcionProblema.Substring(0, 60) + "…" : r.DescripcionProblema)</td>
+                        <td><partial name="_EstadoTaller" model="r.EstadoTaller" /></td>
+                        <td class="text-nowrap">@(r.FechaCambioEstado?.ToString("dd/MM/yyyy HH:mm") ?? "—")</td>
+                        <td class="text-end"><a asp-action="Detalles" asp-route-id="@r.Id" class="btn btn-sm btn-outline-secondary" title="Detalle"><i class="bi bi-eye"></i></a></td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+    <div class="card-footer bg-white">
+        <span class="text-muted small">@Model.Count recepción(es)</span>
+    </div>
+</div>

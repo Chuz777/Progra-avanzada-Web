@@ -168,7 +168,8 @@ namespace ConcesionarioN.Services
             var nombre = usuario.Nombre;
             return await _context.Ventas.AnyAsync(v => v.ClienteId == id || v.VendedorId == id || v.ClienteNombre == nombre)
                 || await _context.Reservas.AnyAsync(r => r.ClienteNombre == nombre)
-                || await _context.TallerCitas.AnyAsync(c => c.UsuarioId == id);
+                || await _context.TallerCitas.AnyAsync(c => c.UsuarioId == id)
+                || await _context.CitasIngreso.AnyAsync(c => c.ClienteId == id);
         }
 
         // HU-06
