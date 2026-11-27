@@ -1,0 +1,13 @@
+@model string
+@{
+    var clase = Model switch
+    {
+        EstadosTaller.Recibido => "bg-secondary",
+        EstadosTaller.EnDiagnostico => "bg-info text-dark",
+        EstadosTaller.EnReparacion => "bg-warning text-dark",
+        EstadosTaller.Listo => "bg-success",
+        EstadosTaller.Entregado => "bg-dark",
+        _ => "bg-secondary"
+    };
+}
+<span class="badge @clase">@Model</span>

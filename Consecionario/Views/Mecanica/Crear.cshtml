@@ -1,5 +1,80 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
+@model RecepcionCrearDto
+@using System.Text.Json
 @{
+    ViewData["Title"] = "Recibir vehículo en taller";
+    var placas = (Dictionary<int, List<string>>)ViewBag.Placas;
+}
+
+<div class="row justify-content-center">
+    <div class="col-md-9 col-lg-7">
+        <div class="card">
+            <div class="card-header card-header-black">
+                <h5 class="mb-0"><i class="bi bi-box-arrow-in-down"></i> Recibir vehículo en taller</h5>
+            </div>
+            <div class="card-body p-4">
+                <form asp-action="Crear" method="post">
+                    <div asp-validation-summary="ModelOnly" class="alert alert-danger"></div>
+
+                    <div class="mb-3">
+                        <label asp-for="ClienteId" class="form-label">Cliente</label>
+                        <select asp-for="ClienteId" id="clienteId" class="form-select" asp-items="@((List<SelectListItem>)ViewBag.Clientes)">
+                            <option value="">Seleccione un cliente...</option>
+                        </select>
+                        <span asp-validation-for="ClienteId" class="text-danger small"></span>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label asp-for="PlacaVehiculo" class="form-label">Placa del vehículo</label>
+                            <input asp-for="PlacaVehiculo" class="form-control text-uppercase" list="placasCliente" maxlength="10" autocomplete="off" />
+                            <datalist id="placasCliente"></datalist>
+                            <span asp-validation-for="PlacaVehiculo" class="text-danger small"></span>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label">Estado de la recepción</label>
+                            <input type="text" class="form-control" value="@EstadosTaller.Recibido" disabled />
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label asp-for="EstadoVehiculo" class="form-label">Estado del vehículo al recibirlo (opcional)</label>
+                        <textarea asp-for="EstadoVehiculo" class="form-control" rows="2" maxlength="300" placeholder="Ej. Rayón en puerta trasera, 45 000 km"></textarea>
+                        <span asp-validation-for="EstadoVehiculo" class="text-danger small"></span>
+                    </div>
+
+                    <div class="mb-4">
+                        <label asp-for="DescripcionProblema" class="form-label">Problema reportado</label>
+                        <textarea asp-for="DescripcionProblema" class="form-control" rows="3" placeholder="Mínimo 10 caracteres"></textarea>
+                        <span asp-validation-for="DescripcionProblema" class="text-danger small"></span>
+                    </div>
+
+                    <div class="d-flex gap-2">
+                        <button type="submit" class="btn btn-red-custom">Registrar recepción</button>
+                        <a asp-action="Index" class="btn btn-outline-secondary">Cancelar</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        // Placas conocidas de cada cliente (unidades compradas y visitas anteriores al taller)
+        const placas = @Html.Raw(JsonSerializer.Serialize(placas));
+        const clienteSel = document.getElementById("clienteId");
+        const lista = document.getElementById("placasCliente");
+
+        function llenarPlacas() {
+            lista.innerHTML = "";
+            (placas[clienteSel.value] || []).forEach(p => {
+                const o = document.createElement("option");
+                o.value = p;
+                lista.appendChild(o);
+            });
+        }
+
+        clienteSel.addEventListener("change", llenarPlacas);
+        llenarPlacas();
+    </script>
 }

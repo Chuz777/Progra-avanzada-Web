@@ -1,0 +1,440 @@
+D:\U .net\Progra avnzada web CORE\Consecionario\obj\Debug\net8.0\rpswa.dswa.cache.json
+D:\U .net\Progra avnzada web CORE\Consecionario\obj\Debug\net8.0\ConcesionarioN.GeneratedMSBuildEditorConfig.editorconfig
+D:\U .net\Progra avnzada web CORE\Consecionario\obj\Debug\net8.0\ConcesionarioN.AssemblyInfoInputs.cache
+D:\U .net\Progra avnzada web CORE\Consecionario\obj\Debug\net8.0\ConcesionarioN.AssemblyInfo.cs
+D:\U .net\Progra avnzada web CORE\Consecionario\obj\Debug\net8.0\ConcesionarioN.csproj.CoreCompileInputs.cache
+D:\U .net\Progra avnzada web CORE\Consecionario\obj\Debug\net8.0\ConcesionarioN.MvcApplicationPartsAssemblyInfo.cache
+D:\U .net\Progra avnzada web CORE\Consecionario\obj\Debug\net8.0\ConcesionarioN.RazorAssemblyInfo.cache
+D:\U .net\Progra avnzada web CORE\Consecionario\obj\Debug\net8.0\ConcesionarioN.RazorAssemblyInfo.cs
+D:\U .net\Progra avnzada web CORE\Consecionario\obj\Debug\net8.0\ConcesionarioN.csproj.AssemblyReference.cache
+D:\U .net\Progra avnzada web CORE\Consecionario\bin\Debug\net8.0\appsettings.Development.json
+D:\U .net\Progra avnzada web CORE\Consecionario\bin\Debug\net8.0\appsettings.json
+D:\U .net\Progra avnzada web CORE\Consecionario\bin\Debug\net8.0\ConcesionarioN.staticwebassets.runtime.json
+D:\U .net\Progra avnzada web CORE\Consecionario\bin\Debug\net8.0\ConcesionarioN.staticwebassets.endpoints.json
+D:\U .net\Progra avnzada web CORE\Consecionario\bin\Debug\net8.0\ConcesionarioN.exe
+D:\U .net\Progra avnzada web CORE\Consecionario\bin\Debug\net8.0\ConcesionarioN.deps.json
+D:\U .net\Progra avnzada web CORE\Consecionario\bin\Debug\net8.0\ConcesionarioN.runtimeconfig.json
+D:\U .net\Progra avnzada web CORE\Consecionario\bin\Debug\net8.0\ConcesionarioN.dll
+D:\U .net\Progra avnzada web CORE\Consecionario\bin\Debug\net8.0\ConcesionarioN.pdb
+D:\U .net\Progra avnzada web CORE\Consecionario\bin\Debug\net8.0\Azure.Core.dll
+D:\U .net\Progra avnzada web CORE\Consecionario\bin\Debug\net8.0\Azure.Identity.dll
+D:\U .net\Progra avnzada web CORE\Consecionario\bin\Debug\net8.0\Humanizer.dll
+D:\U .net\Progra avnzada web CORE\Consecionario\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\U .net\Progra avnzada web CORE\Consecionario\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
+D:\U .net\Progra avnzada web CORE\Consecionario\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
+D:\U .net\Progra avnzada web CORE\Consecionario\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+D:\U .net\Progra avnzada web CORE\Consecionario\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
+D:\U .net\Progra avnzada web CORE\Consecionario\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+D:\U .net\Progra avnzada web CORE\Consecionario\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+D:\U .net\Progra avnzada web CORE\Consecionario\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\U .net\Progra avnzada web CORE\Consecionario\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\U .net\Progra avnzada web CORE\Consecionario\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\U .net\Progra avnzada web CORE\Consecionario\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\U .net\Progra avnzada web CORE\Consecionario\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+D:\U .net\Progra avnzada web CORE\Consecionario\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+D:\U .net\Progra avnzada web CORE\Consecionario\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\U .net\Progra avnzada web CORE\Consecionario\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+D:\U .net\Progra avnzada web CORE\Consecionario\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
+D:\U .net\Progra avnzada web CORE\Consecionario\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+D:\U .net\Progra avnzada web CORE\Consecionario\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+D:\U .net\Progra avnzada web CORE\Consecionario\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+D:\U .net\Progra avnzada web CORE\Consecionario\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\U .net\Progra avnzada web CORE\Consecionario\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+D:\U .net\Progra avnzada web CORE\Consecionario\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\U .net\Progra avnzada web CORE\Consecionario\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+D:\U .net\Progra avnzada web CORE\Consecionario\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+D:\U .net\Progra avnzada web CORE\Consecionario\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\U .net\Progra avnzada web CORE\Consecionario\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+D:\U .net\Progra avnzada web CORE\Consecionario\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+D:\U .net\Progra avnzada web CORE\Consecionario\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+D:\U .net\Progra avnzada web CORE\Consecionario\bin\Debug\net8.0\Mono.TextTemplating.dll
+D:\U .net\Progra avnzada web CORE\Consecionario\bin\Debug\net8.0\System.CodeDom.dll
+D:\U .net\Progra avnzada web CORE\Consecionario\bin\Debug\net8.0\System.Composition.AttributedModel.dll
+D:\U .net\Progra avnzada web CORE\Consecionario\bin\Debug\net8.0\System.Composition.Convention.dll
+D:\U .net\Progra avnzada web CORE\Consecionario\bin\Debug\net8.0\System.Composition.Hosting.dll
+D:\U .net\Progra avnzada web CORE\Consecionario\bin\Debug\net8.0\System.Composition.Runtime.dll
+D:\U .net\Progra avnzada web CORE\Consecionario\bin\Debug\net8.0\System.Composition.TypedParts.dll
+D:\U .net\Progra avnzada web CORE\Consecionario\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+D:\U .net\Progra avnzada web CORE\Consecionario\bin\Debug\net8.0\System.Drawing.Common.dll
+D:\U .net\Progra avnzada web CORE\Consecionario\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+D:\U .net\Progra avnzada web CORE\Consecionario\bin\Debug\net8.0\System.Memory.Data.dll
+D:\U .net\Progra avnzada web CORE\Consecionario\bin\Debug\net8.0\System.Runtime.Caching.dll
+D:\U .net\Progra avnzada web CORE\Consecionario\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+D:\U .net\Progra avnzada web CORE\Consecionario\bin\Debug\net8.0\System.Security.Permissions.dll
+D:\U .net\Progra avnzada web CORE\Consecionario\bin\Debug\net8.0\System.Windows.Extensions.dll
+D:\U .net\Progra avnzada web CORE\Consecionario\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
+D:\U .net\Progra avnzada web CORE\Consecionario\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
+D:\U .net\Progra avnzada web CORE\Consecionario\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
+D:\U .net\Progra avnzada web CORE\Consecionario\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.resources.dll
+D:\U .net\Progra avnzada web CORE\Consecionario\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.resources.dll
+D:\U .net\Progra avnzada web CORE\Consecionario\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.resources.dll
+D:\U .net\Progra avnzada web CORE\Consecionario\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.resources.dll
+D:\U .net\Progra avnzada web CORE\Consecionario\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.resources.dll
+D:\U .net\Progra avnzada web CORE\Consecionario\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+D:\U .net\Progra avnzada web CORE\Consecionario\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.resources.dll
+D:\U .net\Progra avnzada web CORE\Consecionario\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.resources.dll
+D:\U .net\Progra avnzada web CORE\Consecionario\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+D:\U .net\Progra avnzada web CORE\Consecionario\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+D:\U .net\Progra avnzada web CORE\Consecionario\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\U .net\Progra avnzada web CORE\Consecionario\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\U .net\Progra avnzada web CORE\Consecionario\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\U .net\Progra avnzada web CORE\Consecionario\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\U .net\Progra avnzada web CORE\Consecionario\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\U .net\Progra avnzada web CORE\Consecionario\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\U .net\Progra avnzada web CORE\Consecionario\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\U .net\Progra avnzada web CORE\Consecionario\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\U .net\Progra avnzada web CORE\Consecionario\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\U .net\Progra avnzada web CORE\Consecionario\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\U .net\Progra avnzada web CORE\Consecionario\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\U .net\Progra avnzada web CORE\Consecionario\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\U .net\Progra avnzada web CORE\Consecionario\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\U .net\Progra avnzada web CORE\Consecionario\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\U .net\Progra avnzada web CORE\Consecionario\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\U .net\Progra avnzada web CORE\Consecionario\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\U .net\Progra avnzada web CORE\Consecionario\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\U .net\Progra avnzada web CORE\Consecionario\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\U .net\Progra avnzada web CORE\Consecionario\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\U .net\Progra avnzada web CORE\Consecionario\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\U .net\Progra avnzada web CORE\Consecionario\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\U .net\Progra avnzada web CORE\Consecionario\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\U .net\Progra avnzada web CORE\Consecionario\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\U .net\Progra avnzada web CORE\Consecionario\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\U .net\Progra avnzada web CORE\Consecionario\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\U .net\Progra avnzada web CORE\Consecionario\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\U .net\Progra avnzada web CORE\Consecionario\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\U .net\Progra avnzada web CORE\Consecionario\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\U .net\Progra avnzada web CORE\Consecionario\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\U .net\Progra avnzada web CORE\Consecionario\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\U .net\Progra avnzada web CORE\Consecionario\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\U .net\Progra avnzada web CORE\Consecionario\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\U .net\Progra avnzada web CORE\Consecionario\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\U .net\Progra avnzada web CORE\Consecionario\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\U .net\Progra avnzada web CORE\Consecionario\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\U .net\Progra avnzada web CORE\Consecionario\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\U .net\Progra avnzada web CORE\Consecionario\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\U .net\Progra avnzada web CORE\Consecionario\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\U .net\Progra avnzada web CORE\Consecionario\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\U .net\Progra avnzada web CORE\Consecionario\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\U .net\Progra avnzada web CORE\Consecionario\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\U .net\Progra avnzada web CORE\Consecionario\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\U .net\Progra avnzada web CORE\Consecionario\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\U .net\Progra avnzada web CORE\Consecionario\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\U .net\Progra avnzada web CORE\Consecionario\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\U .net\Progra avnzada web CORE\Consecionario\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\U .net\Progra avnzada web CORE\Consecionario\bin\Debug\net8.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+D:\U .net\Progra avnzada web CORE\Consecionario\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+D:\U .net\Progra avnzada web CORE\Consecionario\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+D:\U .net\Progra avnzada web CORE\Consecionario\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\U .net\Progra avnzada web CORE\Consecionario\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+D:\U .net\Progra avnzada web CORE\Consecionario\obj\Debug\net8.0\rjimswa.dswa.cache.json
+D:\U .net\Progra avnzada web CORE\Consecionario\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+D:\U .net\Progra avnzada web CORE\Consecionario\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+D:\U .net\Progra avnzada web CORE\Consecionario\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+D:\U .net\Progra avnzada web CORE\Consecionario\obj\Debug\net8.0\scopedcss\bundle\ConcesionarioN.styles.css
+D:\U .net\Progra avnzada web CORE\Consecionario\obj\Debug\net8.0\scopedcss\projectbundle\ConcesionarioN.bundle.scp.css
+D:\U .net\Progra avnzada web CORE\Consecionario\obj\Debug\net8.0\staticwebassets.build.json
+D:\U .net\Progra avnzada web CORE\Consecionario\obj\Debug\net8.0\staticwebassets.build.json.cache
+D:\U .net\Progra avnzada web CORE\Consecionario\obj\Debug\net8.0\staticwebassets.development.json
+D:\U .net\Progra avnzada web CORE\Consecionario\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+D:\U .net\Progra avnzada web CORE\Consecionario\obj\Debug\net8.0\swae.build.ex.cache
+D:\U .net\Progra avnzada web CORE\Consecionario\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+D:\U .net\Progra avnzada web CORE\Consecionario\obj\Debug\net8.0\Concesio.46D2846F.Up2Date
+D:\U .net\Progra avnzada web CORE\Consecionario\obj\Debug\net8.0\ConcesionarioN.dll
+D:\U .net\Progra avnzada web CORE\Consecionario\obj\Debug\net8.0\refint\ConcesionarioN.dll
+D:\U .net\Progra avnzada web CORE\Consecionario\obj\Debug\net8.0\ConcesionarioN.pdb
+D:\U .net\Progra avnzada web CORE\Consecionario\obj\Debug\net8.0\ConcesionarioN.genruntimeconfig.cache
+D:\U .net\Progra avnzada web CORE\Consecionario\obj\Debug\net8.0\ref\ConcesionarioN.dll
+C:\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\appsettings.Development.json
+C:\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\appsettings.json
+C:\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\ConcesionarioN.staticwebassets.runtime.json
+C:\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\ConcesionarioN.staticwebassets.endpoints.json
+C:\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\ConcesionarioN.exe
+C:\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\ConcesionarioN.deps.json
+C:\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\ConcesionarioN.runtimeconfig.json
+C:\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\ConcesionarioN.dll
+C:\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\ConcesionarioN.pdb
+C:\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\Azure.Core.dll
+C:\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\Azure.Identity.dll
+C:\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\Humanizer.dll
+C:\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
+C:\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
+C:\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+C:\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
+C:\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+C:\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+C:\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+C:\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
+C:\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+C:\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+C:\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+C:\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\Mono.TextTemplating.dll
+C:\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\System.CodeDom.dll
+C:\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\System.Composition.AttributedModel.dll
+C:\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\System.Composition.Convention.dll
+C:\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\System.Composition.Hosting.dll
+C:\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\System.Composition.Runtime.dll
+C:\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\System.Composition.TypedParts.dll
+C:\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+C:\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\System.Drawing.Common.dll
+C:\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\System.Memory.Data.dll
+C:\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\System.Runtime.Caching.dll
+C:\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+C:\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\System.Security.Permissions.dll
+C:\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\System.Windows.Extensions.dll
+C:\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
+C:\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
+C:\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
+C:\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.resources.dll
+C:\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.resources.dll
+C:\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.resources.dll
+C:\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.resources.dll
+C:\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.resources.dll
+C:\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.resources.dll
+C:\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.resources.dll
+C:\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+C:\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+C:\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Progra-avanzada-Web\Consecionario\obj\Debug\net8.0\ConcesionarioN.csproj.AssemblyReference.cache
+C:\Progra-avanzada-Web\Consecionario\obj\Debug\net8.0\rpswa.dswa.cache.json
+C:\Progra-avanzada-Web\Consecionario\obj\Debug\net8.0\ConcesionarioN.GeneratedMSBuildEditorConfig.editorconfig
+C:\Progra-avanzada-Web\Consecionario\obj\Debug\net8.0\ConcesionarioN.AssemblyInfoInputs.cache
+C:\Progra-avanzada-Web\Consecionario\obj\Debug\net8.0\ConcesionarioN.AssemblyInfo.cs
+C:\Progra-avanzada-Web\Consecionario\obj\Debug\net8.0\ConcesionarioN.csproj.CoreCompileInputs.cache
+C:\Progra-avanzada-Web\Consecionario\obj\Debug\net8.0\ConcesionarioN.MvcApplicationPartsAssemblyInfo.cache
+C:\Progra-avanzada-Web\Consecionario\obj\Debug\net8.0\ConcesionarioN.RazorAssemblyInfo.cache
+C:\Progra-avanzada-Web\Consecionario\obj\Debug\net8.0\ConcesionarioN.RazorAssemblyInfo.cs
+C:\Progra-avanzada-Web\Consecionario\obj\Debug\net8.0\ConcesionarioN.sourcelink.json
+C:\Progra-avanzada-Web\Consecionario\obj\Debug\net8.0\rjimswa.dswa.cache.json
+C:\Progra-avanzada-Web\Consecionario\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+C:\Progra-avanzada-Web\Consecionario\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+C:\Progra-avanzada-Web\Consecionario\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Progra-avanzada-Web\Consecionario\obj\Debug\net8.0\scopedcss\bundle\ConcesionarioN.styles.css
+C:\Progra-avanzada-Web\Consecionario\obj\Debug\net8.0\scopedcss\projectbundle\ConcesionarioN.bundle.scp.css
+C:\Progra-avanzada-Web\Consecionario\obj\Debug\net8.0\staticwebassets.build.json
+C:\Progra-avanzada-Web\Consecionario\obj\Debug\net8.0\staticwebassets.build.json.cache
+C:\Progra-avanzada-Web\Consecionario\obj\Debug\net8.0\staticwebassets.development.json
+C:\Progra-avanzada-Web\Consecionario\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Progra-avanzada-Web\Consecionario\obj\Debug\net8.0\swae.build.ex.cache
+C:\Progra-avanzada-Web\Consecionario\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Progra-avanzada-Web\Consecionario\obj\Debug\net8.0\Concesio.46D2846F.Up2Date
+C:\Progra-avanzada-Web\Consecionario\obj\Debug\net8.0\ConcesionarioN.dll
+C:\Progra-avanzada-Web\Consecionario\obj\Debug\net8.0\refint\ConcesionarioN.dll
+C:\Progra-avanzada-Web\Consecionario\obj\Debug\net8.0\ConcesionarioN.pdb
+C:\Progra-avanzada-Web\Consecionario\obj\Debug\net8.0\ConcesionarioN.genruntimeconfig.cache
+C:\Progra-avanzada-Web\Consecionario\obj\Debug\net8.0\ref\ConcesionarioN.dll
+D:\U NET CORE\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\appsettings.Development.json
+D:\U NET CORE\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\appsettings.json
+D:\U NET CORE\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\ConcesionarioN.staticwebassets.runtime.json
+D:\U NET CORE\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\ConcesionarioN.staticwebassets.endpoints.json
+D:\U NET CORE\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\ConcesionarioN.exe
+D:\U NET CORE\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\ConcesionarioN.deps.json
+D:\U NET CORE\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\ConcesionarioN.runtimeconfig.json
+D:\U NET CORE\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\ConcesionarioN.dll
+D:\U NET CORE\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\ConcesionarioN.pdb
+D:\U NET CORE\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\Azure.Core.dll
+D:\U NET CORE\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\Azure.Identity.dll
+D:\U NET CORE\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\Humanizer.dll
+D:\U NET CORE\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\U NET CORE\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
+D:\U NET CORE\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
+D:\U NET CORE\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+D:\U NET CORE\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
+D:\U NET CORE\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+D:\U NET CORE\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+D:\U NET CORE\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\U NET CORE\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\U NET CORE\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\U NET CORE\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\U NET CORE\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+D:\U NET CORE\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+D:\U NET CORE\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\U NET CORE\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+D:\U NET CORE\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
+D:\U NET CORE\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+D:\U NET CORE\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+D:\U NET CORE\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+D:\U NET CORE\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\U NET CORE\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+D:\U NET CORE\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\U NET CORE\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+D:\U NET CORE\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+D:\U NET CORE\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\U NET CORE\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+D:\U NET CORE\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+D:\U NET CORE\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+D:\U NET CORE\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\Mono.TextTemplating.dll
+D:\U NET CORE\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\System.CodeDom.dll
+D:\U NET CORE\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\System.Composition.AttributedModel.dll
+D:\U NET CORE\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\System.Composition.Convention.dll
+D:\U NET CORE\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\System.Composition.Hosting.dll
+D:\U NET CORE\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\System.Composition.Runtime.dll
+D:\U NET CORE\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\System.Composition.TypedParts.dll
+D:\U NET CORE\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+D:\U NET CORE\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\System.Drawing.Common.dll
+D:\U NET CORE\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+D:\U NET CORE\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\System.Memory.Data.dll
+D:\U NET CORE\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\System.Runtime.Caching.dll
+D:\U NET CORE\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+D:\U NET CORE\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\System.Security.Permissions.dll
+D:\U NET CORE\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\System.Windows.Extensions.dll
+D:\U NET CORE\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
+D:\U NET CORE\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
+D:\U NET CORE\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
+D:\U NET CORE\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.resources.dll
+D:\U NET CORE\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.resources.dll
+D:\U NET CORE\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.resources.dll
+D:\U NET CORE\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.resources.dll
+D:\U NET CORE\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.resources.dll
+D:\U NET CORE\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+D:\U NET CORE\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.resources.dll
+D:\U NET CORE\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.resources.dll
+D:\U NET CORE\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+D:\U NET CORE\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+D:\U NET CORE\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\U NET CORE\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\U NET CORE\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\U NET CORE\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\U NET CORE\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\U NET CORE\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\U NET CORE\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\U NET CORE\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\U NET CORE\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\U NET CORE\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\U NET CORE\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\U NET CORE\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\U NET CORE\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\U NET CORE\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\U NET CORE\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\U NET CORE\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\U NET CORE\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\U NET CORE\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\U NET CORE\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\U NET CORE\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\U NET CORE\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\U NET CORE\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\U NET CORE\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\U NET CORE\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\U NET CORE\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\U NET CORE\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\U NET CORE\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\U NET CORE\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\U NET CORE\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\U NET CORE\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\U NET CORE\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\U NET CORE\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\U NET CORE\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\U NET CORE\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\U NET CORE\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\U NET CORE\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\U NET CORE\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\U NET CORE\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\U NET CORE\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\U NET CORE\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\U NET CORE\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\U NET CORE\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\U NET CORE\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\U NET CORE\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\U NET CORE\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\U NET CORE\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\U NET CORE\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+D:\U NET CORE\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+D:\U NET CORE\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+D:\U NET CORE\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\U NET CORE\Progra-avanzada-Web\Consecionario\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+D:\U NET CORE\Progra-avanzada-Web\Consecionario\obj\Debug\net8.0\ConcesionarioN.csproj.AssemblyReference.cache
+D:\U NET CORE\Progra-avanzada-Web\Consecionario\obj\Debug\net8.0\rpswa.dswa.cache.json
+D:\U NET CORE\Progra-avanzada-Web\Consecionario\obj\Debug\net8.0\ConcesionarioN.GeneratedMSBuildEditorConfig.editorconfig
+D:\U NET CORE\Progra-avanzada-Web\Consecionario\obj\Debug\net8.0\ConcesionarioN.AssemblyInfoInputs.cache
+D:\U NET CORE\Progra-avanzada-Web\Consecionario\obj\Debug\net8.0\ConcesionarioN.AssemblyInfo.cs
+D:\U NET CORE\Progra-avanzada-Web\Consecionario\obj\Debug\net8.0\ConcesionarioN.csproj.CoreCompileInputs.cache
+D:\U NET CORE\Progra-avanzada-Web\Consecionario\obj\Debug\net8.0\ConcesionarioN.MvcApplicationPartsAssemblyInfo.cache
+D:\U NET CORE\Progra-avanzada-Web\Consecionario\obj\Debug\net8.0\ConcesionarioN.RazorAssemblyInfo.cache
+D:\U NET CORE\Progra-avanzada-Web\Consecionario\obj\Debug\net8.0\ConcesionarioN.RazorAssemblyInfo.cs
+D:\U NET CORE\Progra-avanzada-Web\Consecionario\obj\Debug\net8.0\ConcesionarioN.sourcelink.json
+D:\U NET CORE\Progra-avanzada-Web\Consecionario\obj\Debug\net8.0\rjimswa.dswa.cache.json
+D:\U NET CORE\Progra-avanzada-Web\Consecionario\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+D:\U NET CORE\Progra-avanzada-Web\Consecionario\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+D:\U NET CORE\Progra-avanzada-Web\Consecionario\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+D:\U NET CORE\Progra-avanzada-Web\Consecionario\obj\Debug\net8.0\scopedcss\bundle\ConcesionarioN.styles.css
+D:\U NET CORE\Progra-avanzada-Web\Consecionario\obj\Debug\net8.0\scopedcss\projectbundle\ConcesionarioN.bundle.scp.css
+D:\U NET CORE\Progra-avanzada-Web\Consecionario\obj\Debug\net8.0\staticwebassets.build.json
+D:\U NET CORE\Progra-avanzada-Web\Consecionario\obj\Debug\net8.0\staticwebassets.build.json.cache
+D:\U NET CORE\Progra-avanzada-Web\Consecionario\obj\Debug\net8.0\staticwebassets.development.json
+D:\U NET CORE\Progra-avanzada-Web\Consecionario\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+D:\U NET CORE\Progra-avanzada-Web\Consecionario\obj\Debug\net8.0\swae.build.ex.cache
+D:\U NET CORE\Progra-avanzada-Web\Consecionario\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+D:\U NET CORE\Progra-avanzada-Web\Consecionario\obj\Debug\net8.0\Concesio.46D2846F.Up2Date
+D:\U NET CORE\Progra-avanzada-Web\Consecionario\obj\Debug\net8.0\ConcesionarioN.dll
+D:\U NET CORE\Progra-avanzada-Web\Consecionario\obj\Debug\net8.0\refint\ConcesionarioN.dll
+D:\U NET CORE\Progra-avanzada-Web\Consecionario\obj\Debug\net8.0\ConcesionarioN.pdb
+D:\U NET CORE\Progra-avanzada-Web\Consecionario\obj\Debug\net8.0\ConcesionarioN.genruntimeconfig.cache
+D:\U NET CORE\Progra-avanzada-Web\Consecionario\obj\Debug\net8.0\ref\ConcesionarioN.dll

@@ -1,0 +1,97 @@
+@model CitaDto
+@using System.Text.Json
+@{
+    ViewData["Title"] = "Agendar cita de taller";
+    bool esPersonal = ViewBag.EsPersonal;
+    var dia = (DateTime)ViewBag.Dia;
+    var placas = (Dictionary<int, List<string>>)ViewBag.Placas;
+}
+
+<div class="row justify-content-center">
+    <div class="col-md-10 col-lg-8">
+        <div class="card">
+            <div class="card-header card-header-black">
+                <h5 class="mb-0"><i class="bi bi-calendar-plus"></i> Agendar cita de ingreso al taller</h5>
+            </div>
+            <div class="card-body p-4">
+                <form asp-action="Agendar" method="post" id="formCita">
+                    <div asp-validation-summary="ModelOnly" class="alert alert-danger"></div>
+
+                    @if (esPersonal)
+                    {
+                        <div class="mb-3">
+                            <label asp-for="ClienteId" class="form-label">Cliente</label>
+                            <select asp-for="ClienteId" id="clienteId" class="form-select" asp-items="@((List<SelectListItem>)ViewBag.Clientes)">
+                                <option value="">Seleccione un cliente...</option>
+                            </select>
+                            <span asp-validation-for="ClienteId" class="text-danger small"></span>
+                        </div>
+                    }
+
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label asp-for="PlacaVehiculo" class="form-label">Placa del vehículo</label>
+                            <input asp-for="PlacaVehiculo" id="placa" class="form-control text-uppercase" list="placasCliente" maxlength="10" autocomplete="off" />
+                            <datalist id="placasCliente"></datalist>
+                            <span asp-validation-for="PlacaVehiculo" class="text-danger small"></span>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label asp-for="Fecha" class="form-label">Fecha</label>
+                            <input type="date" id="fecha" name="Fecha" value="@dia.ToString("yyyy-MM-dd")"
+                                   min="@DateTime.Today.ToString("yyyy-MM-dd")" class="form-control" />
+                            <span asp-validation-for="Fecha" class="text-danger small"></span>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <partial name="_Horarios" model="Model.Hora" />
+                    </div>
+
+                    <div class="mb-4">
+                        <label asp-for="Motivo" class="form-label">Motivo (opcional)</label>
+                        <textarea asp-for="Motivo" class="form-control" rows="2" maxlength="300" placeholder="Ej. Mantenimiento de 10 000 km"></textarea>
+                        <span asp-validation-for="Motivo" class="text-danger small"></span>
+                    </div>
+
+                    <div class="d-flex gap-2">
+                        <button type="submit" class="btn btn-red-custom">Confirmar cita</button>
+                        <a asp-action="Agenda" class="btn btn-outline-secondary">Cancelar</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        const placas = @Html.Raw(JsonSerializer.Serialize(placas));
+        const clienteSel = document.getElementById("clienteId");
+        const placa = document.getElementById("placa");
+        const lista = document.getElementById("placasCliente");
+        const fecha = document.getElementById("fecha");
+
+        function llenarPlacas() {
+            lista.innerHTML = "";
+            const clave = clienteSel ? clienteSel.value : Object.keys(placas)[0];
+            (placas[clave] || []).forEach(p => {
+                const o = document.createElement("option");
+                o.value = p;
+                lista.appendChild(o);
+            });
+        }
+
+        // Al cambiar la fecha se recargan los horarios libres de ese día
+        fecha.addEventListener("change", function () {
+            if (!fecha.value) return;
+            const url = new URL(window.location.href.split("?")[0], window.location.origin);
+            url.searchParams.set("fecha", fecha.value);
+            if (clienteSel && clienteSel.value) url.searchParams.set("clienteId", clienteSel.value);
+            if (placa.value) url.searchParams.set("placa", placa.value);
+            window.location.href = url.toString();
+        });
+
+        if (clienteSel) clienteSel.addEventListener("change", llenarPlacas);
+        llenarPlacas();
+    </script>
+}

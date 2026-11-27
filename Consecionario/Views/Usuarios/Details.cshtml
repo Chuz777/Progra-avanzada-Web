@@ -1,0 +1,35 @@
+@model Usuario
+@{
+    ViewData["Title"] = "Detalle de usuario";
+    bool tieneMovimientos = ViewBag.TieneMovimientos;
+}
+
+<div class="row justify-content-center">
+    <div class="col-md-8 col-lg-6">
+        <div class="card">
+            <div class="card-header card-header-black">
+                <h5 class="mb-0"><i class="bi bi-person-vcard"></i> Detalle de usuario</h5>
+            </div>
+            <div class="card-body p-4">
+                <dl class="row mb-0">
+                    <dt class="col-sm-4">Nombre</dt><dd class="col-sm-8">@Model.Nombre</dd>
+                    <dt class="col-sm-4">Correo</dt><dd class="col-sm-8">@Model.Email</dd>
+                    <dt class="col-sm-4">Cédula</dt><dd class="col-sm-8">@(string.IsNullOrEmpty(Model.Cedula) ? "—" : Model.Cedula)</dd>
+                    <dt class="col-sm-4">Teléfono</dt><dd class="col-sm-8">@(string.IsNullOrEmpty(Model.Telefono) ? "—" : Model.Telefono)</dd>
+                    <dt class="col-sm-4">Rol</dt><dd class="col-sm-8"><span class="badge badge-rol-@Model.Rol.ToLower()">@Model.Rol</span></dd>
+                    <dt class="col-sm-4">Estado</dt>
+                    <dd class="col-sm-8">
+                        @if (Model.Activo) { <span class="badge bg-success">Activo</span> }
+                        else { <span class="badge bg-secondary">Inactivo</span> }
+                    </dd>
+                    <dt class="col-sm-4">Movimientos</dt><dd class="col-sm-8">@(tieneMovimientos ? "Tiene ventas, reservas o citas asociadas" : "Sin movimientos")</dd>
+                    <dt class="col-sm-4">Creado</dt><dd class="col-sm-8">@Model.FechaCreacion.ToString("dd/MM/yyyy HH:mm")</dd>
+                </dl>
+            </div>
+            <div class="card-footer bg-white d-flex gap-2">
+                <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-red-custom">Editar</a>
+                <a asp-action="Index" class="btn btn-outline-secondary">Volver al listado</a>
+            </div>
+        </div>
+    </div>
+</div>

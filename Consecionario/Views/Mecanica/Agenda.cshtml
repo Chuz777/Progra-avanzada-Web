@@ -1,5 +1,116 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
+@model AgendaDto
 @{
+    bool esPersonal = ViewBag.EsPersonal;
+    var esSemana = Model.Vista == "semana";
+    ViewData["Title"] = esPersonal ? "Agenda del taller" : "Mis citas de taller";
+    var paso = esSemana ? 7 : 1;
+    var anterior = Model.Fecha.AddDays(-paso).ToString("yyyy-MM-dd");
+    var siguiente = Model.Fecha.AddDays(paso).ToString("yyyy-MM-dd");
+    var es = new System.Globalization.CultureInfo("es-CR");
+    var dias = Enumerable.Range(0, (Model.Hasta - Model.Desde).Days + 1).Select(i => Model.Desde.AddDays(i)).ToList();
+}
+
+<div class="d-flex justify-content-between align-items-center mb-4 flex-wrap gap-2">
+    <h2 class="page-title mb-0">@(esPersonal ? "Agenda del taller" : "Mis citas de taller")</h2>
+    <div class="d-flex gap-2">
+        <a asp-action="Agendar" class="btn btn-sm btn-red-custom"><i class="bi bi-calendar-plus"></i> Agendar cita</a>
+        <a asp-action="Index" class="btn btn-sm btn-outline-red-custom"><i class="bi bi-tools"></i> @(esPersonal ? "Recepciones" : "Mis vehículos en taller")</a>
+    </div>
+</div>
+
+<div class="card mb-4">
+    <div class="card-body">
+        <form asp-action="Agenda" method="get" class="row g-2 align-items-end">
+            <div class="col-md-3">
+                <label class="form-label" for="vista">Vista</label>
+                <select id="vista" name="vista" class="form-select">
+                    <option value="dia" selected="@(!esSemana)">Día</option>
+                    <option value="semana" selected="@esSemana">Semana</option>
+                </select>
+            </div>
+            <div class="col-md-3">
+                <label class="form-label" for="fecha">Fecha</label>
+                <input type="date" id="fecha" name="fecha" value="@Model.Fecha.ToString("yyyy-MM-dd")" class="form-control" />
+            </div>
+            <div class="col-md-6 d-flex gap-2 flex-wrap">
+                <button type="submit" class="btn btn-red-custom"><i class="bi bi-search"></i> Ver</button>
+                <a asp-action="Agenda" asp-route-vista="@Model.Vista" asp-route-fecha="@anterior" class="btn btn-outline-secondary" title="Anterior"><i class="bi bi-chevron-left"></i></a>
+                <a asp-action="Agenda" asp-route-vista="@Model.Vista" class="btn btn-outline-secondary">Hoy</a>
+                <a asp-action="Agenda" asp-route-vista="@Model.Vista" asp-route-fecha="@siguiente" class="btn btn-outline-secondary" title="Siguiente"><i class="bi bi-chevron-right"></i></a>
+            </div>
+        </form>
+    </div>
+</div>
+
+<p class="text-muted">
+    @if (esSemana)
+    {
+        <text>Semana del @Model.Desde.ToString("dd/MM/yyyy") al @Model.Hasta.ToString("dd/MM/yyyy")</text>
+    }
+    else
+    {
+        <text>@es.TextInfo.ToTitleCase(Model.Fecha.ToString("dddd dd 'de' MMMM 'de' yyyy", es))</text>
+    }
+</p>
+
+@foreach (var d in dias)
+{
+    var citasDia = Model.Citas.Where(c => c.FechaHora.Date == d).ToList();
+    if (esSemana && !citasDia.Any()) { continue; }
+
+    <div class="card mb-3">
+        @if (esSemana)
+        {
+            <div class="card-header bg-white fw-semibold">@es.TextInfo.ToTitleCase(d.ToString("dddd dd/MM", es))</div>
+        }
+        <div class="table-responsive">
+            <table class="table table-hover align-middle mb-0">
+                <thead>
+                    <tr>
+                        <th>Hora</th>
+                        <th>Cliente</th>
+                        <th>Vehículo</th>
+                        <th>Motivo</th>
+                        <th>Estado</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @if (!citasDia.Any())
+                    {
+                        <tr><td colspan="6" class="text-center text-muted py-4">No hay citas para este día.</td></tr>
+                    }
+                    @foreach (var c in citasDia)
+                    {
+                        var programada = c.Estado == EstadosCita.Programada;
+                        <tr class="@(programada ? "" : "text-muted")">
+                            <td class="text-nowrap fw-semibold">@c.FechaHora.ToString("HH:mm")</td>
+                            <td>@c.ClienteNombre</td>
+                            <td class="text-nowrap">@c.PlacaVehiculo</td>
+                            <td>@(string.IsNullOrWhiteSpace(c.Motivo) ? "—" : c.Motivo)</td>
+                            <td>
+                                @if (programada) { <span class="badge bg-success">Programada</span> }
+                                else { <span class="badge bg-secondary">Cancelada</span> }
+                            </td>
+                            <td class="text-end text-nowrap">
+                                @if (programada && c.FechaHora > DateTime.Now)
+                                {
+                                    <a asp-action="Reprogramar" asp-route-id="@c.Id" class="btn btn-sm btn-outline-warning" title="Reprogramar"><i class="bi bi-calendar-event"></i></a>
+                                    <form asp-action="Cancelar" asp-route-id="@c.Id" method="post" class="d-inline"
+                                          onsubmit="return confirm('¿Cancelar esta cita? El horario quedará libre.');">
+                                        <button type="submit" class="btn btn-sm btn-outline-danger" title="Cancelar"><i class="bi bi-x-circle"></i></button>
+                                    </form>
+                                }
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+}
+
+@if (esSemana && !Model.Citas.Any())
+{
+    <div class="card"><div class="card-body text-center text-muted py-4">No hay citas en esta semana.</div></div>
 }
