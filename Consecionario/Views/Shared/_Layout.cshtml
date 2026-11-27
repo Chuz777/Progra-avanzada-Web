@@ -29,13 +29,17 @@
                         {
                             <li class="nav-item"><a class="nav-link" asp-controller="Accesorios" asp-action="Index"><i class="bi bi-gear"></i> Accesorios</a></li>
                             <li class="nav-item"><a class="nav-link" asp-controller="TallerCitas" asp-action="Index"><i class="bi bi-tools"></i> Taller</a></li>
-                            @if (User.IsInRole(RolesSistema.Admin) || User.IsInRole(RolesSistema.Dependiente))
+                            <li class="nav-item"><a class="nav-link" asp-controller="Ventas" asp-action="Index"><i class="bi bi-cash-coin"></i> @(User.IsInRole(RolesSistema.Cliente) ? "Mis compras" : "Ventas")</a></li>
+                            @if (User.IsInRole(RolesSistema.Admin))
                             {
-                                <li class="nav-item"><a class="nav-link" asp-controller="Ventas" asp-action="Index"><i class="bi bi-cash-coin"></i> Ventas</a></li>
+                                <li class="nav-item"><a class="nav-link" asp-controller="Ventas" asp-action="Dashboard"><i class="bi bi-graph-up"></i> Dashboard</a></li>
                             }
                             @if (User.IsInRole(RolesSistema.Admin))
                             {
                                 <li class="nav-item"><a class="nav-link" asp-controller="Usuarios" asp-action="Index"><i class="bi bi-people"></i> Usuarios</a></li>
+                            }
+                            @if (User.IsInRole(RolesSistema.Admin) || User.IsInRole(RolesSistema.Dependiente))
+                            {
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle text-red-custom fw-semibold" href="#" id="menuAgregar" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                         <i class="bi bi-plus-circle-fill"></i> Agregar

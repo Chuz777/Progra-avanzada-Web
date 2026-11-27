@@ -1,5 +1,170 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
+@model DashboardDto
+@using System.Text.Json
 @{
+    ViewData["Title"] = "Dashboard de ventas";
+    var f = Model.Filtro;
+    var cr = new System.Globalization.CultureInfo("es-CR");
+    var periodos = new (string Valor, string Texto)[] { ("hoy", "Hoy"), ("semana", "Semana"), ("mes", "Mes"), ("anio", "Año"), ("rango", "Rango personalizado") };
+}
+
+<div class="d-flex justify-content-between align-items-center mb-4 flex-wrap gap-2">
+    <h2 class="page-title mb-0">Dashboard de ventas</h2>
+    <a asp-action="ExportarCsv"
+       asp-route-Periodo="@f.Periodo" asp-route-Desde="@(f.Desde?.ToString("yyyy-MM-dd"))" asp-route-Hasta="@(f.Hasta?.ToString("yyyy-MM-dd"))"
+       asp-route-Tipo="@f.Tipo" asp-route-VendedorId="@f.VendedorId"
+       class="btn btn-sm btn-outline-red-custom"><i class="bi bi-download"></i> Exportar CSV</a>
+</div>
+
+<div class="card mb-4">
+    <div class="card-body">
+        <form asp-action="Dashboard" method="get" class="row g-2 align-items-end">
+            <div class="col-md-2">
+                <label class="form-label" for="Periodo">Periodo</label>
+                <select id="Periodo" name="Periodo" class="form-select">
+                    @foreach (var p in periodos)
+                    {
+                        <option value="@p.Valor" selected="@(f.Periodo == p.Valor)">@p.Texto</option>
+                    }
+                </select>
+            </div>
+            <div class="col-md-2 campo-rango">
+                <label class="form-label" for="Desde">Desde</label>
+                <input type="date" id="Desde" name="Desde" value="@(f.Desde?.ToString("yyyy-MM-dd"))" class="form-control" />
+            </div>
+            <div class="col-md-2 campo-rango">
+                <label class="form-label" for="Hasta">Hasta</label>
+                <input type="date" id="Hasta" name="Hasta" value="@(f.Hasta?.ToString("yyyy-MM-dd"))" class="form-control" />
+            </div>
+            <div class="col-md-2">
+                <label class="form-label" for="Tipo">Tipo</label>
+                <select id="Tipo" name="Tipo" class="form-select">
+                    <option value="">Todos</option>
+                    <option value="Vehiculo" selected="@(f.Tipo == "Vehiculo")">Vehículo</option>
+                    <option value="Moto" selected="@(f.Tipo == "Moto")">Moto</option>
+                    <option value="Accesorio" selected="@(f.Tipo == "Accesorio")">Accesorio</option>
+                </select>
+            </div>
+            <div class="col-md-2">
+                <label class="form-label" for="VendedorId">Vendedor</label>
+                <select id="VendedorId" name="VendedorId" class="form-select">
+                    <option value="">Todos</option>
+                    @foreach (var v in Model.Vendedores)
+                    {
+                        <option value="@v.Id" selected="@(f.VendedorId == v.Id)">@v.Nombre</option>
+                    }
+                </select>
+            </div>
+            <div class="col-md-2 d-flex gap-2">
+                <button type="submit" class="btn btn-red-custom flex-fill"><i class="bi bi-funnel"></i> Filtrar</button>
+                <a asp-action="Dashboard" class="btn btn-outline-secondary">Limpiar</a>
+            </div>
+        </form>
+        <div class="text-muted small mt-2">Periodo: @Model.Desde.ToString("dd/MM/yyyy") – @Model.Hasta.ToString("dd/MM/yyyy")</div>
+    </div>
+</div>
+
+@if (Model.ErrorFiltro != null)
+{
+    <div class="alert alert-danger">@Model.ErrorFiltro</div>
+}
+else if (Model.CantidadVentas == 0)
+{
+    <div class="alert alert-info">No hay ventas en este periodo</div>
+}
+
+<div class="row g-3 mb-4">
+    <div class="col-sm-6 col-lg-3">
+        <div class="card h-100"><div class="card-body">
+            <div class="text-muted small">Total vendido</div>
+            <div class="fs-4 fw-bold text-red-custom" id="kpiTotal">@Model.TotalVendido.ToString("C0", cr)</div>
+        </div></div>
+    </div>
+    <div class="col-sm-6 col-lg-3">
+        <div class="card h-100"><div class="card-body">
+            <div class="text-muted small">Cantidad de ventas</div>
+            <div class="fs-4 fw-bold" id="kpiCantidad">@Model.CantidadVentas</div>
+        </div></div>
+    </div>
+    <div class="col-sm-6 col-lg-3">
+        <div class="card h-100"><div class="card-body">
+            <div class="text-muted small">Ticket promedio</div>
+            <div class="fs-4 fw-bold" id="kpiTicket">@Model.TicketPromedio.ToString("C0", cr)</div>
+        </div></div>
+    </div>
+    <div class="col-sm-6 col-lg-3">
+        <div class="card h-100"><div class="card-body">
+            <div class="text-muted small">Producto más vendido</div>
+            <div class="fs-5 fw-bold" id="kpiTop">@Model.ProductoMasVendido</div>
+            @if (Model.UnidadesProductoMasVendido > 0)
+            {
+                <div class="text-muted small">@Model.UnidadesProductoMasVendido unidad(es)</div>
+            }
+        </div></div>
+    </div>
+</div>
+
+@if (Model.CantidadVentas > 0)
+{
+    <div class="card mb-4">
+        <div class="card-header bg-white fw-bold">Ventas del periodo</div>
+        <div class="card-body"><canvas id="grafico" height="90"></canvas></div>
+    </div>
+
+    <div class="card">
+        <div class="table-responsive">
+            <table class="table table-hover align-middle mb-0">
+                <thead>
+                    <tr><th>Fecha</th><th>Cliente</th><th>Tipo</th><th>Producto</th><th>Vendedor</th><th class="text-end">Total</th></tr>
+                </thead>
+                <tbody>
+                    @foreach (var v in Model.Ventas)
+                    {
+                        <tr>
+                            <td class="text-nowrap">@v.FechaVenta.ToString("dd/MM/yyyy HH:mm")</td>
+                            <td>@v.ClienteNombre</td>
+                            <td>@v.Tipo</td>
+                            <td>@v.Descripcion</td>
+                            <td>@(v.Vendedor?.Nombre ?? "—")</td>
+                            <td class="text-end text-nowrap">@v.TotalVenta.ToString("C0", cr)</td>
+                        </tr>
+                    }
+                </tbody>
+                <tfoot>
+                    <tr><td colspan="5" class="text-end fw-bold">Total</td><td class="text-end fw-bold">@Model.TotalVendido.ToString("C0", cr)</td></tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+}
+
+@section Scripts {
+    <script>
+        // Muestra las fechas solo cuando el periodo es "Rango personalizado"
+        const periodo = document.getElementById("Periodo");
+        function alternarRango() {
+            document.querySelectorAll(".campo-rango").forEach(function (el) {
+                el.style.display = periodo.value === "rango" ? "block" : "none";
+            });
+        }
+        periodo.addEventListener("change", alternarRango);
+        alternarRango();
+    </script>
+    @if (Model.CantidadVentas > 0)
+    {
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+        <script>
+            new Chart(document.getElementById("grafico"), {
+                type: "bar",
+                data: {
+                    labels: @Html.Raw(JsonSerializer.Serialize(Model.EtiquetasGrafico)),
+                    datasets: [{
+                        label: "Total vendido ($)",
+                        data: @Html.Raw(JsonSerializer.Serialize(Model.ValoresGrafico)),
+                        backgroundColor: "#d90429"
+                    }]
+                },
+                options: { plugins: { legend: { display: false } }, scales: { y: { beginAtZero: true } } }
+            });
+        </script>
+    }
 }

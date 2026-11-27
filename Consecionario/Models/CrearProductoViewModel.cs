@@ -1,4 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations;
 
 namespace ConcesionarioN.Models
 {
@@ -11,11 +11,11 @@ namespace ConcesionarioN.Models
         public string? Marca { get; set; }
         public string? Modelo { get; set; }
         public int? Anio { get; set; }
-        public string Estado { get; set; } = "Disponible";
+        public string? Placa { get; set; }
+        public string? Vin { get; set; }
         public string? ImagenUrl { get; set; }
 
-        // Campo compartido por los 3
-        [Required(ErrorMessage = "El precio es obligatorio")]
+        // Campo compartido por los 3 (la validación de rango depende del tipo y se hace en el controlador)
         public decimal Precio { get; set; }
 
         // Exclusivo Vehículo
@@ -26,6 +26,7 @@ namespace ConcesionarioN.Models
 
         // Exclusivos Accesorio
         public string? Nombre { get; set; }
+        public string? Categoria { get; set; }
         public int? Stock { get; set; }
     }
 }

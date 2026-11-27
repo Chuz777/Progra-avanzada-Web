@@ -1,4 +1,4 @@
-﻿@model Accesorio
+@model Accesorio
 @{
     ViewData["Title"] = Model.Nombre;
 }
@@ -14,12 +14,18 @@
                 @if (!string.IsNullOrWhiteSpace(Model.ImagenUrl))
                 {
                     <div class="text-center mb-4">
-                        <img src="@Model.ImagenUrl" alt="@Model.Nombre" class="img-fluid rounded" style="max-height: 320px; object-fit: cover;" />
+                        <img src="@Model.ImagenUrl" alt="@Model.Nombre" class="img-fluid rounded" style="max-height: 320px; object-fit: cover;" onerror="this.style.display='none'" />
                     </div>
                 }
                 <dl class="row mb-0">
+                    <dt class="col-sm-4">Código</dt>
+                    <dd class="col-sm-8">@Model.Id</dd>
+
                     <dt class="col-sm-4">Nombre</dt>
                     <dd class="col-sm-8">@Model.Nombre</dd>
+
+                    <dt class="col-sm-4">Categoría</dt>
+                    <dd class="col-sm-8">@(string.IsNullOrWhiteSpace(Model.Categoria) ? "—" : Model.Categoria)</dd>
 
                     <dt class="col-sm-4">Stock disponible</dt>
                     <dd class="col-sm-8">@Model.Stock</dd>

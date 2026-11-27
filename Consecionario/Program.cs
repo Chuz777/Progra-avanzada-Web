@@ -13,6 +13,8 @@ builder.Services.AddDbContext<ConcesionarioNDbContext>(options =>
 
 // Servicios de la aplicación
 builder.Services.AddScoped<IUsuarioService, UsuarioService>();
+builder.Services.AddScoped<ICatalogoService, CatalogoService>();
+builder.Services.AddScoped<IVentaService, VentaService>();
 
 // HU-01: autenticación por cookie
 builder.Services
@@ -79,8 +81,17 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
+// Páginas de estado: 404 muestra "No encontrado"
+app.UseStatusCodePagesWithReExecute("/Home/Estado/{0}");
+
 app.UseHttpsRedirection();
 app.UseStaticFiles();
+
+// Cultura fija: los números de los formularios usan punto decimal (12500.50)
+app.UseRequestLocalization(new RequestLocalizationOptions()
+    .SetDefaultCulture("en-US")
+    .AddSupportedCultures("en-US")
+    .AddSupportedUICultures("en-US"));
 
 app.UseRouting();
 

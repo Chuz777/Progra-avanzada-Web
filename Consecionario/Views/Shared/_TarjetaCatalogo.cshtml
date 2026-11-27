@@ -2,8 +2,10 @@
 @model (int Id, string Controlador, string Titulo, string Subtitulo, decimal Precio, string Estado, string ImagenUrl, string Icono)
 
 @{
-    var puedeGestionar = User.IsInRole(RolesSistema.Admin) ||
-                         (Model.Controlador == "Accesorios" && User.IsInRole(RolesSistema.Dependiente));
+    // Editar: Admin y Dependiente. Eliminar: Admin (vehículos y motos) y también Dependiente en accesorios.
+    var puedeEditar = User.IsInRole(RolesSistema.Admin) || User.IsInRole(RolesSistema.Dependiente);
+    var puedeEliminar = User.IsInRole(RolesSistema.Admin) ||
+                        (Model.Controlador == "Accesorios" && User.IsInRole(RolesSistema.Dependiente));
 }
 
 <div class="card h-100 catalogo-card">
@@ -28,19 +30,22 @@
             <i class="bi bi-eye"></i> Ver
         </a>
 
-        @if (puedeGestionar)
+        @if (puedeEditar)
         {
             <div class="d-flex gap-1">
                 <a asp-controller="@Model.Controlador" asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-sm btn-outline-warning">
                     <i class="bi bi-pencil"></i>
                 </a>
-                <form asp-controller="@Model.Controlador" asp-action="Delete" asp-route-id="@Model.Id" method="post" class="d-inline"
+                @if (puedeEliminar)
+                {
+                    <form asp-controller="@Model.Controlador" asp-action="Delete" asp-route-id="@Model.Id" method="post" class="d-inline"
                       onsubmit="return confirm('¿Seguro que deseas eliminar este registro?');">
                     @Html.AntiForgeryToken()
                     <button type="submit" class="btn btn-sm btn-outline-danger">
                         <i class="bi bi-trash"></i>
                     </button>
                 </form>
+                }
             </div>
         }
     </div>

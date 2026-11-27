@@ -1,11 +1,12 @@
 @model IEnumerable<Vehiculo>
 @{
     ViewData["Title"] = "Vehículos";
+    var hayFiltro = (FiltroCatalogoDto)ViewBag.Filtro;
 }
 
 <div class="d-flex justify-content-between align-items-center mb-4">
     <h2 class="page-title mb-0">Vehículos</h2>
-    @if (User.IsInRole(RolesSistema.Admin))
+    @if (User.IsInRole(RolesSistema.Admin) || User.IsInRole(RolesSistema.Dependiente))
     {
         <a asp-controller="Home" asp-action="CrearItem" asp-route-tipo="Vehiculo" class="btn btn-sm btn-red-custom">
             <i class="bi bi-plus-circle"></i> Nuevo Vehículo
@@ -13,9 +14,15 @@
     }
 </div>
 
+<partial name="_FiltrosCatalogo" />
+
 @if (!Model.Any())
 {
-    <div class="card"><div class="card-body text-center text-muted py-5">Aún no hay vehículos registrados.</div></div>
+    <div class="card"><div class="card-body text-center text-muted py-5">
+        @(string.IsNullOrWhiteSpace(hayFiltro.Marca) && !hayFiltro.PrecioMax.HasValue && string.IsNullOrWhiteSpace(hayFiltro.Estado)
+            ? "Aún no hay vehículos registrados."
+            : "No hay vehículos que coincidan con los filtros.")
+    </div></div>
 }
 else
 {
@@ -23,7 +30,7 @@ else
         @foreach (var v in Model)
         {
             <div class="col-sm-6 col-lg-3">
-                <partial name="_TarjetaCatalogo" model="@(v.Id, "Vehiculos", $"{v.Marca} {v.Modelo}", $"{v.Anio} · {v.Transmision}", v.Precio, v.Estado, v.ImagenUrl, "bi-car-front")" />
+                <partial name="_TarjetaCatalogo" model="@((v.Id, "Vehiculos", $"{v.Marca} {v.Modelo}", $"{v.Anio} · {v.Transmision}", v.Precio, v.Estado, v.ImagenUrl, "bi-car-front"))" />
             </div>
         }
     </div>

@@ -1,0 +1,106 @@
+@model VentaUnidadDto
+@using System.Text.Json
+@{
+    ViewData["Title"] = "Vender vehículo o moto";
+    var unidades = (List<UnidadVentaItem>)ViewBag.Unidades;
+    var metodos = (string[])ViewBag.Metodos;
+}
+
+<div class="row justify-content-center">
+    <div class="col-md-9 col-lg-7">
+        <div class="card">
+            <div class="card-header card-header-black">
+                <h5 class="mb-0"><i class="bi bi-car-front"></i> Vender vehículo o moto</h5>
+            </div>
+            <div class="card-body p-4">
+                <form asp-action="CrearUnidad" method="post">
+                    <div asp-validation-summary="ModelOnly" class="alert alert-danger"></div>
+
+                    <div class="mb-3">
+                        <label asp-for="ClienteId" class="form-label">Cliente</label>
+                        <select asp-for="ClienteId" class="form-select" asp-items="@((List<SelectListItem>)ViewBag.Clientes)">
+                            <option value="">Seleccione un cliente...</option>
+                        </select>
+                        <span asp-validation-for="ClienteId" class="text-danger small"></span>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-4 mb-3">
+                            <label asp-for="TipoUnidad" class="form-label">Tipo</label>
+                            <select asp-for="TipoUnidad" id="tipoUnidad" class="form-select">
+                                <option value="Vehiculo">Vehículo</option>
+                                <option value="Moto">Moto</option>
+                            </select>
+                            <span asp-validation-for="TipoUnidad" class="text-danger small"></span>
+                        </div>
+                        <div class="col-md-8 mb-3">
+                            <label asp-for="UnidadId" class="form-label">Unidad</label>
+                            <select asp-for="UnidadId" id="unidadId" class="form-select"></select>
+                            <span asp-validation-for="UnidadId" class="text-danger small"></span>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label asp-for="MetodoPago" class="form-label">Método de pago</label>
+                            <select asp-for="MetodoPago" class="form-select">
+                                <option value="">Seleccione...</option>
+                                @foreach (var m in metodos)
+                                {
+                                    <option value="@m" selected="@(m == Model.MetodoPago)">@m</option>
+                                }
+                            </select>
+                            <span asp-validation-for="MetodoPago" class="text-danger small"></span>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label asp-for="PrecioFinal" class="form-label">Precio final ($)</label>
+                            <input asp-for="PrecioFinal" id="precioFinal" type="number" step="0.01" class="form-control" />
+                            <span asp-validation-for="PrecioFinal" class="text-danger small"></span>
+                        </div>
+                    </div>
+
+                    <div class="mb-4">
+                        <label asp-for="Notas" class="form-label">Notas (opcional)</label>
+                        <textarea asp-for="Notas" class="form-control" rows="2"></textarea>
+                    </div>
+
+                    <div class="d-flex gap-2">
+                        <button type="submit" class="btn btn-red-custom">Registrar venta</button>
+                        <a asp-action="Index" class="btn btn-outline-secondary">Cancelar</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        const unidades = @Html.Raw(JsonSerializer.Serialize(unidades));
+        const seleccionInicial = "@(Model.UnidadId?.ToString() ?? "")";
+        const tipoSel = document.getElementById("tipoUnidad");
+        const unidadSel = document.getElementById("unidadId");
+        const precio = document.getElementById("precioFinal");
+
+        function llenarUnidades(conservar) {
+            const tipo = tipoSel.value;
+            unidadSel.innerHTML = '<option value="">Seleccione una unidad...</option>';
+            unidades.filter(u => (u.Tipo || u.tipo) === tipo).forEach(u => {
+                const o = document.createElement("option");
+                o.value = u.Id ?? u.id;
+                o.textContent = u.Texto ?? u.texto;
+                o.dataset.precio = u.Precio ?? u.precio;
+                if (conservar && String(o.value) === seleccionInicial) o.selected = true;
+                unidadSel.appendChild(o);
+            });
+        }
+
+        tipoSel.addEventListener("change", function () { llenarUnidades(false); });
+        unidadSel.addEventListener("change", function () {
+            const op = unidadSel.options[unidadSel.selectedIndex];
+            if (op && op.dataset.precio) precio.value = op.dataset.precio;
+        });
+
+        llenarUnidades(true);
+    </script>
+}

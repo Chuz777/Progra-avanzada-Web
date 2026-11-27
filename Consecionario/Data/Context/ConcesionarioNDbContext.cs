@@ -14,7 +14,20 @@ namespace ConcesionarioN.Data.Context
         public DbSet<Moto> Motos { get; set; } // Nuevo DbSet separado
         public DbSet<Accesorio> Accesorios { get; set; }
         public DbSet<Venta> Ventas { get; set; }
+        public DbSet<VentaLinea> VentaLineas { get; set; }
         public DbSet<TallerCita> TallerCitas { get; set; }
         public DbSet<Reserva> Reservas { get; set; }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+
+            modelBuilder.Entity<Venta>().HasOne(v => v.Cliente).WithMany().HasForeignKey(v => v.ClienteId).OnDelete(DeleteBehavior.Restrict);
+            modelBuilder.Entity<Venta>().HasOne(v => v.Vendedor).WithMany().HasForeignKey(v => v.VendedorId).OnDelete(DeleteBehavior.Restrict);
+            modelBuilder.Entity<Venta>().HasOne(v => v.Vehiculo).WithMany().HasForeignKey(v => v.VehiculoId).OnDelete(DeleteBehavior.Restrict);
+            modelBuilder.Entity<Venta>().HasOne(v => v.Moto).WithMany().HasForeignKey(v => v.MotoId).OnDelete(DeleteBehavior.Restrict);
+            modelBuilder.Entity<VentaLinea>().HasOne(l => l.Venta).WithMany(v => v.Lineas).HasForeignKey(l => l.VentaId).OnDelete(DeleteBehavior.Cascade);
+            modelBuilder.Entity<VentaLinea>().HasOne(l => l.Accesorio).WithMany().HasForeignKey(l => l.AccesorioId).OnDelete(DeleteBehavior.Restrict);
+        }
     }
 }

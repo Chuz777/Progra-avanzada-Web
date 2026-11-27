@@ -30,13 +30,19 @@ namespace ConcesionarioN.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<string>("Categoria")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
                     b.Property<string>("ImagenUrl")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Nombre")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
 
                     b.Property<decimal>("Precio")
                         .HasColumnType("decimal(18,2)");
@@ -80,8 +86,16 @@ namespace ConcesionarioN.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("Placa")
+                        .HasMaxLength(10)
+                        .HasColumnType("nvarchar(10)");
+
                     b.Property<decimal>("Precio")
                         .HasColumnType("decimal(18,2)");
+
+                    b.Property<string>("Vin")
+                        .HasMaxLength(17)
+                        .HasColumnType("nvarchar(17)");
 
                     b.HasKey("Id");
 
@@ -241,12 +255,20 @@ namespace ConcesionarioN.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("Placa")
+                        .HasMaxLength(10)
+                        .HasColumnType("nvarchar(10)");
+
                     b.Property<decimal>("Precio")
                         .HasColumnType("decimal(18,2)");
 
                     b.Property<string>("Transmision")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Vin")
+                        .HasMaxLength(17)
+                        .HasColumnType("nvarchar(17)");
 
                     b.HasKey("Id");
 
@@ -261,15 +283,43 @@ namespace ConcesionarioN.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<int?>("AccesorioId")
+                    b.Property<bool>("Anulada")
+                        .HasColumnType("bit");
+
+                    b.Property<int?>("ClienteId")
                         .HasColumnType("int");
 
                     b.Property<string>("ClienteNombre")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("Descripcion")
+                        .IsRequired()
+                        .HasMaxLength(300)
+                        .HasColumnType("nvarchar(300)");
+
+                    b.Property<DateTime?>("FechaAnulacion")
+                        .HasColumnType("datetime2");
+
                     b.Property<DateTime>("FechaVenta")
                         .HasColumnType("datetime2");
+
+                    b.Property<string>("MetodoPago")
+                        .IsRequired()
+                        .HasMaxLength(30)
+                        .HasColumnType("nvarchar(30)");
+
+                    b.Property<int?>("MotoId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Notas")
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
+
+                    b.Property<string>("Tipo")
+                        .IsRequired()
+                        .HasMaxLength(20)
+                        .HasColumnType("nvarchar(20)");
 
                     b.Property<decimal>("TotalVenta")
                         .HasColumnType("decimal(18,2)");
@@ -277,13 +327,52 @@ namespace ConcesionarioN.Migrations
                     b.Property<int?>("VehiculoId")
                         .HasColumnType("int");
 
+                    b.Property<int?>("VendedorId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ClienteId");
+
+                    b.HasIndex("MotoId");
+
+                    b.HasIndex("VehiculoId");
+
+                    b.HasIndex("VendedorId");
+
+                    b.ToTable("Ventas");
+                });
+
+            modelBuilder.Entity("ConcesionarioN.Models.VentaLinea", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("AccesorioId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Cantidad")
+                        .HasColumnType("int");
+
+                    b.Property<decimal>("PrecioUnitario")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<decimal>("Subtotal")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<int>("VentaId")
+                        .HasColumnType("int");
+
                     b.HasKey("Id");
 
                     b.HasIndex("AccesorioId");
 
-                    b.HasIndex("VehiculoId");
+                    b.HasIndex("VentaId");
 
-                    b.ToTable("Ventas");
+                    b.ToTable("VentaLineas");
                 });
 
             modelBuilder.Entity("ConcesionarioN.Models.Reserva", b =>
@@ -308,17 +397,57 @@ namespace ConcesionarioN.Migrations
 
             modelBuilder.Entity("ConcesionarioN.Models.Venta", b =>
                 {
-                    b.HasOne("ConcesionarioN.Models.Accesorio", "Accesorio")
+                    b.HasOne("ConcesionarioN.Models.Usuario", "Cliente")
                         .WithMany()
-                        .HasForeignKey("AccesorioId");
+                        .HasForeignKey("ClienteId")
+                        .OnDelete(DeleteBehavior.Restrict);
+
+                    b.HasOne("ConcesionarioN.Models.Moto", "Moto")
+                        .WithMany()
+                        .HasForeignKey("MotoId")
+                        .OnDelete(DeleteBehavior.Restrict);
 
                     b.HasOne("ConcesionarioN.Models.Vehiculo", "Vehiculo")
                         .WithMany()
-                        .HasForeignKey("VehiculoId");
+                        .HasForeignKey("VehiculoId")
+                        .OnDelete(DeleteBehavior.Restrict);
+
+                    b.HasOne("ConcesionarioN.Models.Usuario", "Vendedor")
+                        .WithMany()
+                        .HasForeignKey("VendedorId")
+                        .OnDelete(DeleteBehavior.Restrict);
+
+                    b.Navigation("Cliente");
+
+                    b.Navigation("Moto");
+
+                    b.Navigation("Vehiculo");
+
+                    b.Navigation("Vendedor");
+                });
+
+            modelBuilder.Entity("ConcesionarioN.Models.VentaLinea", b =>
+                {
+                    b.HasOne("ConcesionarioN.Models.Accesorio", "Accesorio")
+                        .WithMany()
+                        .HasForeignKey("AccesorioId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.HasOne("ConcesionarioN.Models.Venta", "Venta")
+                        .WithMany("Lineas")
+                        .HasForeignKey("VentaId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("Accesorio");
 
-                    b.Navigation("Vehiculo");
+                    b.Navigation("Venta");
+                });
+
+            modelBuilder.Entity("ConcesionarioN.Models.Venta", b =>
+                {
+                    b.Navigation("Lineas");
                 });
 #pragma warning restore 612, 618
         }

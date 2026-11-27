@@ -166,7 +166,7 @@ namespace ConcesionarioN.Services
             if (usuario == null) return false;
 
             var nombre = usuario.Nombre;
-            return await _context.Ventas.AnyAsync(v => v.ClienteNombre == nombre)
+            return await _context.Ventas.AnyAsync(v => v.ClienteId == id || v.VendedorId == id || v.ClienteNombre == nombre)
                 || await _context.Reservas.AnyAsync(r => r.ClienteNombre == nombre)
                 || await _context.TallerCitas.AnyAsync(c => c.UsuarioId == id);
         }

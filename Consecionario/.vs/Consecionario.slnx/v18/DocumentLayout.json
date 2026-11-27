@@ -1,134 +1,142 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\U NET CORE\\Progra-avanzada-Web\\Consecionario\\",
+  "WorkspaceRootPath": "C:\\Progra-avanzada-Web\\Consecionario\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1CB7A8DA-8193-66B4-5C4C-002552011272}|ConcesionarioN.csproj|d:\\u net core\\progra-avanzada-web\\consecionario\\views\\accesorios\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1CB7A8DA-8193-66B4-5C4C-002552011272}|ConcesionarioN.csproj|solutionrelative:views\\accesorios\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Progra-avanzada-Web\\Consecionario\\Migrations\\20261127035152_Modulo3Ventas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20261127035152_Modulo3Ventas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1CB7A8DA-8193-66B4-5C4C-002552011272}|ConcesionarioN.csproj|d:\\u net core\\progra-avanzada-web\\consecionario\\views\\accesorios\\detalles.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1CB7A8DA-8193-66B4-5C4C-002552011272}|ConcesionarioN.csproj|solutionrelative:views\\accesorios\\detalles.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1CB7A8DA-8193-66B4-5C4C-002552011272}|ConcesionarioN.csproj|d:\\u net core\\progra-avanzada-web\\consecionario\\views\\accesorios\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1CB7A8DA-8193-66B4-5C4C-002552011272}|ConcesionarioN.csproj|solutionrelative:views\\accesorios\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1CB7A8DA-8193-66B4-5C4C-002552011272}|ConcesionarioN.csproj|d:\\u net core\\progra-avanzada-web\\consecionario\\controllers\\accesorioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1CB7A8DA-8193-66B4-5C4C-002552011272}|ConcesionarioN.csproj|solutionrelative:controllers\\accesorioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1CB7A8DA-8193-66B4-5C4C-002552011272}|ConcesionarioN.csproj|d:\\u net core\\progra-avanzada-web\\consecionario\\views\\shared\\_tarjetacatalogo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1CB7A8DA-8193-66B4-5C4C-002552011272}|ConcesionarioN.csproj|solutionrelative:views\\shared\\_tarjetacatalogo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1CB7A8DA-8193-66B4-5C4C-002552011272}|ConcesionarioN.csproj|d:\\u net core\\progra-avanzada-web\\consecionario\\controllers\\motoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1CB7A8DA-8193-66B4-5C4C-002552011272}|ConcesionarioN.csproj|solutionrelative:controllers\\motoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1CB7A8DA-8193-66B4-5C4C-002552011272}|ConcesionarioN.csproj|d:\\u net core\\progra-avanzada-web\\consecionario\\controllers\\vehiculoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1CB7A8DA-8193-66B4-5C4C-002552011272}|ConcesionarioN.csproj|solutionrelative:controllers\\vehiculoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1CB7A8DA-8193-66B4-5C4C-002552011272}|ConcesionarioN.csproj|d:\\u net core\\progra-avanzada-web\\consecionario\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1CB7A8DA-8193-66B4-5C4C-002552011272}|ConcesionarioN.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1CB7A8DA-8193-66B4-5C4C-002552011272}|ConcesionarioN.csproj|d:\\u net core\\progra-avanzada-web\\consecionario\\views\\motos\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1CB7A8DA-8193-66B4-5C4C-002552011272}|ConcesionarioN.csproj|solutionrelative:views\\motos\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1CB7A8DA-8193-66B4-5C4C-002552011272}|ConcesionarioN.csproj|d:\\u net core\\progra-avanzada-web\\consecionario\\views\\motos\\detalles.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1CB7A8DA-8193-66B4-5C4C-002552011272}|ConcesionarioN.csproj|solutionrelative:views\\motos\\detalles.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1CB7A8DA-8193-66B4-5C4C-002552011272}|ConcesionarioN.csproj|d:\\u net core\\progra-avanzada-web\\consecionario\\views\\vehiculos\\detalles.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1CB7A8DA-8193-66B4-5C4C-002552011272}|ConcesionarioN.csproj|solutionrelative:views\\vehiculos\\detalles.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1CB7A8DA-8193-66B4-5C4C-002552011272}|ConcesionarioN.csproj|d:\\u net core\\progra-avanzada-web\\consecionario\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1CB7A8DA-8193-66B4-5C4C-002552011272}|ConcesionarioN.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1CB7A8DA-8193-66B4-5C4C-002552011272}|ConcesionarioN.csproj|d:\\u net core\\progra-avanzada-web\\consecionario\\views\\vehiculos\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1CB7A8DA-8193-66B4-5C4C-002552011272}|ConcesionarioN.csproj|solutionrelative:views\\vehiculos\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1CB7A8DA-8193-66B4-5C4C-002552011272}|ConcesionarioN.csproj|d:\\u net core\\progra-avanzada-web\\consecionario\\views\\home\\crearitem.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1CB7A8DA-8193-66B4-5C4C-002552011272}|ConcesionarioN.csproj|solutionrelative:views\\home\\crearitem.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\U NET CORE\\Progra-avanzada-Web\\Consecionario\\Migrations\\20261126075047_AgregarImagenUrlAccesorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20261126075047_AgregarImagenUrlAccesorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1CB7A8DA-8193-66B4-5C4C-002552011272}|ConcesionarioN.csproj|d:\\u net core\\progra-avanzada-web\\consecionario\\models\\accesorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1CB7A8DA-8193-66B4-5C4C-002552011272}|ConcesionarioN.csproj|solutionrelative:models\\accesorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1CB7A8DA-8193-66B4-5C4C-002552011272}|ConcesionarioN.csproj|d:\\u net core\\progra-avanzada-web\\consecionario\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1CB7A8DA-8193-66B4-5C4C-002552011272}|ConcesionarioN.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1CB7A8DA-8193-66B4-5C4C-002552011272}|ConcesionarioN.csproj|d:\\u net core\\progra-avanzada-web\\consecionario\\models\\crearproductoviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1CB7A8DA-8193-66B4-5C4C-002552011272}|ConcesionarioN.csproj|solutionrelative:models\\crearproductoviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1CB7A8DA-8193-66B4-5C4C-002552011272}|ConcesionarioN.csproj|d:\\u net core\\progra-avanzada-web\\consecionario\\controllers\\tallercitascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1CB7A8DA-8193-66B4-5C4C-002552011272}|ConcesionarioN.csproj|solutionrelative:controllers\\tallercitascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1CB7A8DA-8193-66B4-5C4C-002552011272}|ConcesionarioN.csproj|d:\\u net core\\progra-avanzada-web\\consecionario\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1CB7A8DA-8193-66B4-5C4C-002552011272}|ConcesionarioN.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1CB7A8DA-8193-66B4-5C4C-002552011272}|ConcesionarioN.csproj|d:\\u net core\\progra-avanzada-web\\consecionario\\models\\venta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1CB7A8DA-8193-66B4-5C4C-002552011272}|ConcesionarioN.csproj|solutionrelative:models\\venta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1CB7A8DA-8193-66B4-5C4C-002552011272}|ConcesionarioN.csproj|d:\\u net core\\progra-avanzada-web\\consecionario\\migrations\\20261112082830_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1CB7A8DA-8193-66B4-5C4C-002552011272}|ConcesionarioN.csproj|solutionrelative:migrations\\20261112082830_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1CB7A8DA-8193-66B4-5C4C-002552011272}|ConcesionarioN.csproj|d:\\u net core\\progra-avanzada-web\\consecionario\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1CB7A8DA-8193-66B4-5C4C-002552011272}|ConcesionarioN.csproj|solutionrelative:models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1CB7A8DA-8193-66B4-5C4C-002552011272}|ConcesionarioN.csproj|d:\\u net core\\progra-avanzada-web\\consecionario\\controllers\\ventascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1CB7A8DA-8193-66B4-5C4C-002552011272}|ConcesionarioN.csproj|solutionrelative:controllers\\ventascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1CB7A8DA-8193-66B4-5C4C-002552011272}|ConcesionarioN.csproj|d:\\u net core\\progra-avanzada-web\\consecionario\\data\\context\\concesionariondbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1CB7A8DA-8193-66B4-5C4C-002552011272}|ConcesionarioN.csproj|c:\\progra-avanzada-web\\consecionario\\data\\context\\concesionariondbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1CB7A8DA-8193-66B4-5C4C-002552011272}|ConcesionarioN.csproj|solutionrelative:data\\context\\concesionariondbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1CB7A8DA-8193-66B4-5C4C-002552011272}|ConcesionarioN.csproj|d:\\u net core\\progra-avanzada-web\\consecionario\\models\\vehiculo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1CB7A8DA-8193-66B4-5C4C-002552011272}|ConcesionarioN.csproj|solutionrelative:models\\vehiculo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1CB7A8DA-8193-66B4-5C4C-002552011272}|ConcesionarioN.csproj|c:\\progra-avanzada-web\\consecionario\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1CB7A8DA-8193-66B4-5C4C-002552011272}|ConcesionarioN.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1CB7A8DA-8193-66B4-5C4C-002552011272}|ConcesionarioN.csproj|d:\\u net core\\progra-avanzada-web\\consecionario\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Progra-avanzada-Web\\Consecionario\\Migrations\\20261127032550_Modulo2Catalogo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20261127032550_Modulo2Catalogo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CB7A8DA-8193-66B4-5C4C-002552011272}|ConcesionarioN.csproj|c:\\progra-avanzada-web\\consecionario\\controllers\\motoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1CB7A8DA-8193-66B4-5C4C-002552011272}|ConcesionarioN.csproj|solutionrelative:controllers\\motoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CB7A8DA-8193-66B4-5C4C-002552011272}|ConcesionarioN.csproj|c:\\progra-avanzada-web\\consecionario\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{1CB7A8DA-8193-66B4-5C4C-002552011272}|ConcesionarioN.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1CB7A8DA-8193-66B4-5C4C-002552011272}|ConcesionarioN.csproj|d:\\u net core\\progra-avanzada-web\\consecionario\\views\\mecanica\\agenda.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{1CB7A8DA-8193-66B4-5C4C-002552011272}|ConcesionarioN.csproj|c:\\progra-avanzada-web\\consecionario\\views\\accesorios\\detalles.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1CB7A8DA-8193-66B4-5C4C-002552011272}|ConcesionarioN.csproj|solutionrelative:views\\accesorios\\detalles.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CB7A8DA-8193-66B4-5C4C-002552011272}|ConcesionarioN.csproj|c:\\progra-avanzada-web\\consecionario\\views\\accesorios\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1CB7A8DA-8193-66B4-5C4C-002552011272}|ConcesionarioN.csproj|solutionrelative:views\\accesorios\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CB7A8DA-8193-66B4-5C4C-002552011272}|ConcesionarioN.csproj|c:\\progra-avanzada-web\\consecionario\\views\\motos\\detalles.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1CB7A8DA-8193-66B4-5C4C-002552011272}|ConcesionarioN.csproj|solutionrelative:views\\motos\\detalles.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CB7A8DA-8193-66B4-5C4C-002552011272}|ConcesionarioN.csproj|c:\\progra-avanzada-web\\consecionario\\views\\vehiculos\\detalles.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1CB7A8DA-8193-66B4-5C4C-002552011272}|ConcesionarioN.csproj|solutionrelative:views\\vehiculos\\detalles.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CB7A8DA-8193-66B4-5C4C-002552011272}|ConcesionarioN.csproj|c:\\progra-avanzada-web\\consecionario\\controllers\\accesorioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1CB7A8DA-8193-66B4-5C4C-002552011272}|ConcesionarioN.csproj|solutionrelative:controllers\\accesorioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CB7A8DA-8193-66B4-5C4C-002552011272}|ConcesionarioN.csproj|c:\\progra-avanzada-web\\consecionario\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1CB7A8DA-8193-66B4-5C4C-002552011272}|ConcesionarioN.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CB7A8DA-8193-66B4-5C4C-002552011272}|ConcesionarioN.csproj|c:\\progra-avanzada-web\\consecionario\\views\\shared\\_tarjetacatalogo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1CB7A8DA-8193-66B4-5C4C-002552011272}|ConcesionarioN.csproj|solutionrelative:views\\shared\\_tarjetacatalogo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CB7A8DA-8193-66B4-5C4C-002552011272}|ConcesionarioN.csproj|c:\\progra-avanzada-web\\consecionario\\views\\accesorios\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1CB7A8DA-8193-66B4-5C4C-002552011272}|ConcesionarioN.csproj|solutionrelative:views\\accesorios\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CB7A8DA-8193-66B4-5C4C-002552011272}|ConcesionarioN.csproj|c:\\progra-avanzada-web\\consecionario\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1CB7A8DA-8193-66B4-5C4C-002552011272}|ConcesionarioN.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CB7A8DA-8193-66B4-5C4C-002552011272}|ConcesionarioN.csproj|c:\\progra-avanzada-web\\consecionario\\views\\motos\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1CB7A8DA-8193-66B4-5C4C-002552011272}|ConcesionarioN.csproj|solutionrelative:views\\motos\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CB7A8DA-8193-66B4-5C4C-002552011272}|ConcesionarioN.csproj|c:\\progra-avanzada-web\\consecionario\\controllers\\vehiculoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1CB7A8DA-8193-66B4-5C4C-002552011272}|ConcesionarioN.csproj|solutionrelative:controllers\\vehiculoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CB7A8DA-8193-66B4-5C4C-002552011272}|ConcesionarioN.csproj|c:\\progra-avanzada-web\\consecionario\\views\\vehiculos\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1CB7A8DA-8193-66B4-5C4C-002552011272}|ConcesionarioN.csproj|solutionrelative:views\\vehiculos\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CB7A8DA-8193-66B4-5C4C-002552011272}|ConcesionarioN.csproj|c:\\progra-avanzada-web\\consecionario\\views\\home\\crearitem.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1CB7A8DA-8193-66B4-5C4C-002552011272}|ConcesionarioN.csproj|solutionrelative:views\\home\\crearitem.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CB7A8DA-8193-66B4-5C4C-002552011272}|ConcesionarioN.csproj|c:\\progra-avanzada-web\\consecionario\\models\\accesorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1CB7A8DA-8193-66B4-5C4C-002552011272}|ConcesionarioN.csproj|solutionrelative:models\\accesorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CB7A8DA-8193-66B4-5C4C-002552011272}|ConcesionarioN.csproj|c:\\progra-avanzada-web\\consecionario\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1CB7A8DA-8193-66B4-5C4C-002552011272}|ConcesionarioN.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CB7A8DA-8193-66B4-5C4C-002552011272}|ConcesionarioN.csproj|c:\\progra-avanzada-web\\consecionario\\models\\crearproductoviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1CB7A8DA-8193-66B4-5C4C-002552011272}|ConcesionarioN.csproj|solutionrelative:models\\crearproductoviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CB7A8DA-8193-66B4-5C4C-002552011272}|ConcesionarioN.csproj|c:\\progra-avanzada-web\\consecionario\\controllers\\tallercitascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1CB7A8DA-8193-66B4-5C4C-002552011272}|ConcesionarioN.csproj|solutionrelative:controllers\\tallercitascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CB7A8DA-8193-66B4-5C4C-002552011272}|ConcesionarioN.csproj|c:\\progra-avanzada-web\\consecionario\\models\\venta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1CB7A8DA-8193-66B4-5C4C-002552011272}|ConcesionarioN.csproj|solutionrelative:models\\venta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CB7A8DA-8193-66B4-5C4C-002552011272}|ConcesionarioN.csproj|c:\\progra-avanzada-web\\consecionario\\migrations\\20261112082830_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1CB7A8DA-8193-66B4-5C4C-002552011272}|ConcesionarioN.csproj|solutionrelative:migrations\\20261112082830_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CB7A8DA-8193-66B4-5C4C-002552011272}|ConcesionarioN.csproj|c:\\progra-avanzada-web\\consecionario\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1CB7A8DA-8193-66B4-5C4C-002552011272}|ConcesionarioN.csproj|solutionrelative:models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CB7A8DA-8193-66B4-5C4C-002552011272}|ConcesionarioN.csproj|c:\\progra-avanzada-web\\consecionario\\controllers\\ventascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1CB7A8DA-8193-66B4-5C4C-002552011272}|ConcesionarioN.csproj|solutionrelative:controllers\\ventascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CB7A8DA-8193-66B4-5C4C-002552011272}|ConcesionarioN.csproj|c:\\progra-avanzada-web\\consecionario\\models\\vehiculo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1CB7A8DA-8193-66B4-5C4C-002552011272}|ConcesionarioN.csproj|solutionrelative:models\\vehiculo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CB7A8DA-8193-66B4-5C4C-002552011272}|ConcesionarioN.csproj|c:\\progra-avanzada-web\\consecionario\\views\\mecanica\\agenda.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{1CB7A8DA-8193-66B4-5C4C-002552011272}|ConcesionarioN.csproj|solutionrelative:views\\mecanica\\agenda.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1CB7A8DA-8193-66B4-5C4C-002552011272}|ConcesionarioN.csproj|d:\\u net core\\progra-avanzada-web\\consecionario\\views\\vehiculos\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{1CB7A8DA-8193-66B4-5C4C-002552011272}|ConcesionarioN.csproj|c:\\progra-avanzada-web\\consecionario\\views\\vehiculos\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{1CB7A8DA-8193-66B4-5C4C-002552011272}|ConcesionarioN.csproj|solutionrelative:views\\vehiculos\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1CB7A8DA-8193-66B4-5C4C-002552011272}|ConcesionarioN.csproj|d:\\u net core\\progra-avanzada-web\\consecionario\\views\\account\\accessdeni.cshtml||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1CB7A8DA-8193-66B4-5C4C-002552011272}|ConcesionarioN.csproj|c:\\progra-avanzada-web\\consecionario\\views\\account\\accessdeni.cshtml||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1CB7A8DA-8193-66B4-5C4C-002552011272}|ConcesionarioN.csproj|solutionrelative:views\\account\\accessdeni.cshtml||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1CB7A8DA-8193-66B4-5C4C-002552011272}|ConcesionarioN.csproj|d:\\u net core\\progra-avanzada-web\\consecionario\\views\\account\\registro.cshtml||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1CB7A8DA-8193-66B4-5C4C-002552011272}|ConcesionarioN.csproj|c:\\progra-avanzada-web\\consecionario\\views\\account\\registro.cshtml||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1CB7A8DA-8193-66B4-5C4C-002552011272}|ConcesionarioN.csproj|solutionrelative:views\\account\\registro.cshtml||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1CB7A8DA-8193-66B4-5C4C-002552011272}|ConcesionarioN.csproj|d:\\u net core\\progra-avanzada-web\\consecionario\\views\\account\\login.cshtml||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1CB7A8DA-8193-66B4-5C4C-002552011272}|ConcesionarioN.csproj|c:\\progra-avanzada-web\\consecionario\\views\\account\\login.cshtml||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1CB7A8DA-8193-66B4-5C4C-002552011272}|ConcesionarioN.csproj|solutionrelative:views\\account\\login.cshtml||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1CB7A8DA-8193-66B4-5C4C-002552011272}|ConcesionarioN.csproj|c:\\progra-avanzada-web\\consecionario\\migrations\\20261126075047_agregarimagenurlaccesorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1CB7A8DA-8193-66B4-5C4C-002552011272}|ConcesionarioN.csproj|solutionrelative:migrations\\20261126075047_agregarimagenurlaccesorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -138,7 +146,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -150,115 +158,89 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Detalles.cshtml",
-              "DocumentMoniker": "D:\\U NET CORE\\Progra-avanzada-Web\\Consecionario\\Views\\Accesorios\\Detalles.cshtml",
-              "RelativeDocumentMoniker": "Views\\Accesorios\\Detalles.cshtml",
-              "ToolTip": "D:\\U NET CORE\\Progra-avanzada-Web\\Consecionario\\Views\\Accesorios\\Detalles.cshtml",
-              "RelativeToolTip": "Views\\Accesorios\\Detalles.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-11-26T08:35:30.148Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "D:\\U NET CORE\\Progra-avanzada-Web\\Consecionario\\Views\\Accesorios\\Edit.cshtml",
-              "RelativeDocumentMoniker": "Views\\Accesorios\\Edit.cshtml",
-              "ToolTip": "D:\\U NET CORE\\Progra-avanzada-Web\\Consecionario\\Views\\Accesorios\\Edit.cshtml",
-              "RelativeToolTip": "Views\\Accesorios\\Edit.cshtml",
+              "Title": "20261127035152_Modulo3Ventas.cs",
+              "DocumentMoniker": "C:\\Progra-avanzada-Web\\Consecionario\\Migrations\\20261127035152_Modulo3Ventas.cs",
+              "RelativeDocumentMoniker": "Migrations\\20261127035152_Modulo3Ventas.cs",
+              "ToolTip": "C:\\Progra-avanzada-Web\\Consecionario\\Migrations\\20261127035152_Modulo3Ventas.cs",
+              "RelativeToolTip": "Migrations\\20261127035152_Modulo3Ventas.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-11-26T08:09:26.892Z",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-27T03:51:53.078Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\U NET CORE\\Progra-avanzada-Web\\Consecionario\\Views\\Motos\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Motos\\Index.cshtml",
-              "ToolTip": "D:\\U NET CORE\\Progra-avanzada-Web\\Consecionario\\Views\\Motos\\Index.cshtml",
-              "RelativeToolTip": "Views\\Motos\\Index.cshtml",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAB0AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-11-26T08:09:08.656Z",
+              "DocumentIndex": 3,
+              "Title": "20261127032550_Modulo2Catalogo.cs",
+              "DocumentMoniker": "C:\\Progra-avanzada-Web\\Consecionario\\Migrations\\20261127032550_Modulo2Catalogo.cs",
+              "RelativeDocumentMoniker": "Migrations\\20261127032550_Modulo2Catalogo.cs",
+              "ToolTip": "C:\\Progra-avanzada-Web\\Consecionario\\Migrations\\20261127032550_Modulo2Catalogo.cs",
+              "RelativeToolTip": "Migrations\\20261127032550_Modulo2Catalogo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-27T03:25:50.593Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 12,
               "Title": "_TarjetaCatalogo.cshtml",
-              "DocumentMoniker": "D:\\U NET CORE\\Progra-avanzada-Web\\Consecionario\\Views\\Shared\\_TarjetaCatalogo.cshtml",
+              "DocumentMoniker": "C:\\Progra-avanzada-Web\\Consecionario\\Views\\Shared\\_TarjetaCatalogo.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\_TarjetaCatalogo.cshtml",
-              "ToolTip": "D:\\U NET CORE\\Progra-avanzada-Web\\Consecionario\\Views\\Shared\\_TarjetaCatalogo.cshtml",
+              "ToolTip": "C:\\Progra-avanzada-Web\\Consecionario\\Views\\Shared\\_TarjetaCatalogo.cshtml",
               "RelativeToolTip": "Views\\Shared\\_TarjetaCatalogo.cshtml",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAABoAAABDAAAAAAAAAA==",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAABwAAABDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-11-26T08:07:43.446Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 11,
               "Title": "HomeController.cs",
-              "DocumentMoniker": "D:\\U NET CORE\\Progra-avanzada-Web\\Consecionario\\Controllers\\HomeController.cs",
+              "DocumentMoniker": "C:\\Progra-avanzada-Web\\Consecionario\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
-              "ToolTip": "D:\\U NET CORE\\Progra-avanzada-Web\\Consecionario\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Progra-avanzada-Web\\Consecionario\\Controllers\\HomeController.cs",
               "RelativeToolTip": "Controllers\\HomeController.cs",
-              "ViewState": "AgIAACIAAAAAAAAAAADwv3oAAAAyAAAAAAAAAA==",
+              "ViewState": "AgIAACUAAAAAAAAAAADwv4sAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-11-12T08:14:25.765Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "VehiculosController.cs",
-              "DocumentMoniker": "D:\\U NET CORE\\Progra-avanzada-Web\\Consecionario\\Controllers\\VehiculosController.cs",
-              "RelativeDocumentMoniker": "Controllers\\VehiculosController.cs",
-              "ToolTip": "D:\\U NET CORE\\Progra-avanzada-Web\\Consecionario\\Controllers\\VehiculosController.cs",
-              "RelativeToolTip": "Controllers\\VehiculosController.cs",
-              "ViewState": "AgIAADAAAAAAAAAAAAAzwDkAAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-12T08:00:13.262Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "MotosController.cs",
-              "DocumentMoniker": "D:\\U NET CORE\\Progra-avanzada-Web\\Consecionario\\Controllers\\MotosController.cs",
+              "DocumentMoniker": "C:\\Progra-avanzada-Web\\Consecionario\\Controllers\\MotosController.cs",
               "RelativeDocumentMoniker": "Controllers\\MotosController.cs",
-              "ToolTip": "D:\\U NET CORE\\Progra-avanzada-Web\\Consecionario\\Controllers\\MotosController.cs",
+              "ToolTip": "C:\\Progra-avanzada-Web\\Consecionario\\Controllers\\MotosController.cs",
               "RelativeToolTip": "Controllers\\MotosController.cs",
-              "ViewState": "AgIAACUAAAAAAAAAAAAmwDkAAAAxAAAAAAAAAA==",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAmwFQAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-11-12T08:09:06.557Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 10,
               "Title": "AccesoriosController.cs",
-              "DocumentMoniker": "D:\\U NET CORE\\Progra-avanzada-Web\\Consecionario\\Controllers\\AccesoriosController.cs",
+              "DocumentMoniker": "C:\\Progra-avanzada-Web\\Consecionario\\Controllers\\AccesoriosController.cs",
               "RelativeDocumentMoniker": "Controllers\\AccesoriosController.cs",
-              "ToolTip": "D:\\U NET CORE\\Progra-avanzada-Web\\Consecionario\\Controllers\\AccesoriosController.cs",
+              "ToolTip": "C:\\Progra-avanzada-Web\\Consecionario\\Controllers\\AccesoriosController.cs",
               "RelativeToolTip": "Controllers\\AccesoriosController.cs",
-              "ViewState": "AgIAADcAAAAAAAAAAADwv0kAAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAIwEIAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-11-12T08:04:16.972Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 14,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\U NET CORE\\Progra-avanzada-Web\\Consecionario\\Views\\Home\\Index.cshtml",
+              "DocumentMoniker": "C:\\Progra-avanzada-Web\\Consecionario\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
-              "ToolTip": "D:\\U NET CORE\\Progra-avanzada-Web\\Consecionario\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Progra-avanzada-Web\\Consecionario\\Views\\Home\\Index.cshtml",
               "RelativeToolTip": "Views\\Home\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADQAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -267,89 +249,177 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\U NET CORE\\Progra-avanzada-Web\\Consecionario\\Views\\Accesorios\\Index.cshtml",
+              "DocumentMoniker": "C:\\Progra-avanzada-Web\\Consecionario\\Views\\Accesorios\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Accesorios\\Index.cshtml",
-              "ToolTip": "D:\\U NET CORE\\Progra-avanzada-Web\\Consecionario\\Views\\Accesorios\\Index.cshtml",
+              "ToolTip": "C:\\Progra-avanzada-Web\\Consecionario\\Views\\Accesorios\\Index.cshtml",
               "RelativeToolTip": "Views\\Accesorios\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-11-26T08:09:28.346Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 8,
               "Title": "Detalles.cshtml",
-              "DocumentMoniker": "D:\\U NET CORE\\Progra-avanzada-Web\\Consecionario\\Views\\Motos\\Detalles.cshtml",
+              "DocumentMoniker": "C:\\Progra-avanzada-Web\\Consecionario\\Views\\Motos\\Detalles.cshtml",
               "RelativeDocumentMoniker": "Views\\Motos\\Detalles.cshtml",
-              "ToolTip": "D:\\U NET CORE\\Progra-avanzada-Web\\Consecionario\\Views\\Motos\\Detalles.cshtml",
+              "ToolTip": "C:\\Progra-avanzada-Web\\Consecionario\\Views\\Motos\\Detalles.cshtml",
               "RelativeToolTip": "Views\\Motos\\Detalles.cshtml",
-              "ViewState": "AgIAABEAAAAAAAAAAAAkwC0AAAAGAAAAAAAAAA==",
+              "ViewState": "AgIAABAAAAAAAAAAAAAkwDoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-11-26T08:24:27.83Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 9,
               "Title": "Detalles.cshtml",
-              "DocumentMoniker": "D:\\U NET CORE\\Progra-avanzada-Web\\Consecionario\\Views\\Vehiculos\\Detalles.cshtml",
+              "DocumentMoniker": "C:\\Progra-avanzada-Web\\Consecionario\\Views\\Vehiculos\\Detalles.cshtml",
               "RelativeDocumentMoniker": "Views\\Vehiculos\\Detalles.cshtml",
-              "ToolTip": "D:\\U NET CORE\\Progra-avanzada-Web\\Consecionario\\Views\\Vehiculos\\Detalles.cshtml",
+              "ToolTip": "C:\\Progra-avanzada-Web\\Consecionario\\Views\\Vehiculos\\Detalles.cshtml",
               "RelativeToolTip": "Views\\Vehiculos\\Detalles.cshtml",
-              "ViewState": "AgIAABcAAAAAAAAAAAAkwC0AAAAGAAAAAAAAAA==",
+              "ViewState": "AgIAABgAAAAAAAAAAAAkwDoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-10-23T06:19:15.216Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "CrearProductoViewModel.cs",
-              "DocumentMoniker": "D:\\U NET CORE\\Progra-avanzada-Web\\Consecionario\\Models\\CrearProductoViewModel.cs",
-              "RelativeDocumentMoniker": "Models\\CrearProductoViewModel.cs",
-              "ToolTip": "D:\\U NET CORE\\Progra-avanzada-Web\\Consecionario\\Models\\CrearProductoViewModel.cs",
-              "RelativeToolTip": "Models\\CrearProductoViewModel.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAwwBIAAAArAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Progra-avanzada-Web\\Consecionario\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Progra-avanzada-Web\\Consecionario\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-10-23T06:40:19.118Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Progra-avanzada-Web\\Consecionario\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Progra-avanzada-Web\\Consecionario\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAFAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-26T06:27:12.857Z",
+              "WhenOpened": "2026-10-23T06:40:10.204Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ConcesionarioNDbContext.cs",
+              "DocumentMoniker": "C:\\Progra-avanzada-Web\\Consecionario\\Data\\Context\\ConcesionarioNDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\Context\\ConcesionarioNDbContext.cs",
+              "ToolTip": "C:\\Progra-avanzada-Web\\Consecionario\\Data\\Context\\ConcesionarioNDbContext.cs",
+              "RelativeToolTip": "Data\\Context\\ConcesionarioNDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-23T06:48:47.833Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Progra-avanzada-Web\\Consecionario\\Views\\Motos\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Motos\\Index.cshtml",
+              "ToolTip": "C:\\Progra-avanzada-Web\\Consecionario\\Views\\Motos\\Index.cshtml",
+              "RelativeToolTip": "Views\\Motos\\Index.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-11-26T08:09:08.656Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 13,
-              "Title": "CrearItem.cshtml",
-              "DocumentMoniker": "D:\\U NET CORE\\Progra-avanzada-Web\\Consecionario\\Views\\Home\\CrearItem.cshtml",
-              "RelativeDocumentMoniker": "Views\\Home\\CrearItem.cshtml",
-              "ToolTip": "D:\\U NET CORE\\Progra-avanzada-Web\\Consecionario\\Views\\Home\\CrearItem.cshtml",
-              "RelativeToolTip": "Views\\Home\\CrearItem.cshtml",
-              "ViewState": "AgIAABsAAAAAkozV5h8bwC4AAAAAAAAAAAAAAA==",
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Progra-avanzada-Web\\Consecionario\\Views\\Accesorios\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Views\\Accesorios\\Edit.cshtml",
+              "ToolTip": "C:\\Progra-avanzada-Web\\Consecionario\\Views\\Accesorios\\Edit.cshtml",
+              "RelativeToolTip": "Views\\Accesorios\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-11-26T06:55:27.541Z",
+              "WhenOpened": "2026-11-26T08:09:26.892Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Detalles.cshtml",
+              "DocumentMoniker": "C:\\Progra-avanzada-Web\\Consecionario\\Views\\Accesorios\\Detalles.cshtml",
+              "RelativeDocumentMoniker": "Views\\Accesorios\\Detalles.cshtml",
+              "ToolTip": "C:\\Progra-avanzada-Web\\Consecionario\\Views\\Accesorios\\Detalles.cshtml",
+              "RelativeToolTip": "Views\\Accesorios\\Detalles.cshtml",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAAAC4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-11-26T08:35:30.148Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 16,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "D:\\U NET CORE\\Progra-avanzada-Web\\Consecionario\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "D:\\U NET CORE\\Progra-avanzada-Web\\Consecionario\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAACcAAAAAAAAAAAA0wDcAAABwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-11-26T07:00:07.802Z",
+              "Title": "VehiculosController.cs",
+              "DocumentMoniker": "C:\\Progra-avanzada-Web\\Consecionario\\Controllers\\VehiculosController.cs",
+              "RelativeDocumentMoniker": "Controllers\\VehiculosController.cs",
+              "ToolTip": "C:\\Progra-avanzada-Web\\Consecionario\\Controllers\\VehiculosController.cs",
+              "RelativeToolTip": "Controllers\\VehiculosController.cs",
+              "ViewState": "AgIAADsAAAAAAAAAAAAAwFQAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-12T08:00:13.262Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 21,
+              "Title": "CrearProductoViewModel.cs",
+              "DocumentMoniker": "C:\\Progra-avanzada-Web\\Consecionario\\Models\\CrearProductoViewModel.cs",
+              "RelativeDocumentMoniker": "Models\\CrearProductoViewModel.cs",
+              "ToolTip": "C:\\Progra-avanzada-Web\\Consecionario\\Models\\CrearProductoViewModel.cs",
+              "RelativeToolTip": "Models\\CrearProductoViewModel.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAwwBIAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-26T06:27:12.857Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "CrearItem.cshtml",
+              "DocumentMoniker": "C:\\Progra-avanzada-Web\\Consecionario\\Views\\Home\\CrearItem.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\CrearItem.cshtml",
+              "ToolTip": "C:\\Progra-avanzada-Web\\Consecionario\\Views\\Home\\CrearItem.cshtml",
+              "RelativeToolTip": "Views\\Home\\CrearItem.cshtml",
+              "ViewState": "AgIAABsAAAAAkozV5h8bwC4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-11-26T06:55:27.541Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Progra-avanzada-Web\\Consecionario\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Progra-avanzada-Web\\Consecionario\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAACcAAAAAAAAAAAA0wDcAAABwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-11-26T07:00:07.802Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
               "Title": "VentasController.cs",
-              "DocumentMoniker": "D:\\U NET CORE\\Progra-avanzada-Web\\Consecionario\\Controllers\\VentasController.cs",
+              "DocumentMoniker": "C:\\Progra-avanzada-Web\\Consecionario\\Controllers\\VentasController.cs",
               "RelativeDocumentMoniker": "Controllers\\VentasController.cs",
-              "ToolTip": "D:\\U NET CORE\\Progra-avanzada-Web\\Consecionario\\Controllers\\VentasController.cs",
+              "ToolTip": "C:\\Progra-avanzada-Web\\Consecionario\\Controllers\\VentasController.cs",
               "RelativeToolTip": "Controllers\\VentasController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -357,87 +427,59 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 17,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\U NET CORE\\Progra-avanzada-Web\\Consecionario\\Views\\Vehiculos\\Index.cshtml",
+              "DocumentMoniker": "C:\\Progra-avanzada-Web\\Consecionario\\Views\\Vehiculos\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Vehiculos\\Index.cshtml",
-              "ToolTip": "D:\\U NET CORE\\Progra-avanzada-Web\\Consecionario\\Views\\Vehiculos\\Index.cshtml",
+              "ToolTip": "C:\\Progra-avanzada-Web\\Consecionario\\Views\\Vehiculos\\Index.cshtml",
               "RelativeToolTip": "Views\\Vehiculos\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-10-23T06:18:53.752Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-23T06:18:53.752Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 33,
               "Title": "20261126075047_AgregarImagenUrlAccesorio.cs",
-              "DocumentMoniker": "D:\\U NET CORE\\Progra-avanzada-Web\\Consecionario\\Migrations\\20261126075047_AgregarImagenUrlAccesorio.cs",
+              "DocumentMoniker": "C:\\Progra-avanzada-Web\\Consecionario\\Migrations\\20261126075047_AgregarImagenUrlAccesorio.cs",
               "RelativeDocumentMoniker": "Migrations\\20261126075047_AgregarImagenUrlAccesorio.cs",
-              "ToolTip": "D:\\U NET CORE\\Progra-avanzada-Web\\Consecionario\\Migrations\\20261126075047_AgregarImagenUrlAccesorio.cs",
+              "ToolTip": "C:\\Progra-avanzada-Web\\Consecionario\\Migrations\\20261126075047_AgregarImagenUrlAccesorio.cs",
               "RelativeToolTip": "Migrations\\20261126075047_AgregarImagenUrlAccesorio.cs",
               "ViewState": "AgIAAAoAAAAAAAAAAAA9wAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-26T07:50:47.543Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-26T07:50:47.543Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 22,
               "Title": "TallerCitasController.cs",
-              "DocumentMoniker": "D:\\U NET CORE\\Progra-avanzada-Web\\Consecionario\\Controllers\\TallerCitasController.cs",
+              "DocumentMoniker": "C:\\Progra-avanzada-Web\\Consecionario\\Controllers\\TallerCitasController.cs",
               "RelativeDocumentMoniker": "Controllers\\TallerCitasController.cs",
-              "ToolTip": "D:\\U NET CORE\\Progra-avanzada-Web\\Consecionario\\Controllers\\TallerCitasController.cs",
+              "ToolTip": "C:\\Progra-avanzada-Web\\Consecionario\\Controllers\\TallerCitasController.cs",
               "RelativeToolTip": "Controllers\\TallerCitasController.cs",
               "ViewState": "AgIAABEAAAAAAAAAAAAwwCAAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-12T08:27:39.147Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "Accesorio.cs",
-              "DocumentMoniker": "D:\\U NET CORE\\Progra-avanzada-Web\\Consecionario\\Models\\Accesorio.cs",
-              "RelativeDocumentMoniker": "Models\\Accesorio.cs",
-              "ToolTip": "D:\\U NET CORE\\Progra-avanzada-Web\\Consecionario\\Models\\Accesorio.cs",
-              "RelativeToolTip": "Models\\Accesorio.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-23T06:56:03.349Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "ConcesionarioNDbContext.cs",
-              "DocumentMoniker": "D:\\U NET CORE\\Progra-avanzada-Web\\Consecionario\\Data\\Context\\ConcesionarioNDbContext.cs",
-              "RelativeDocumentMoniker": "Data\\Context\\ConcesionarioNDbContext.cs",
-              "ToolTip": "D:\\U NET CORE\\Progra-avanzada-Web\\Consecionario\\Data\\Context\\ConcesionarioNDbContext.cs",
-              "RelativeToolTip": "Data\\Context\\ConcesionarioNDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-23T06:48:47.833Z"
+              "WhenOpened": "2026-11-12T08:27:39.147Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 19,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\U NET CORE\\Progra-avanzada-Web\\Consecionario\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "D:\\U NET CORE\\Progra-avanzada-Web\\Consecionario\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Title": "Accesorio.cs",
+              "DocumentMoniker": "C:\\Progra-avanzada-Web\\Consecionario\\Models\\Accesorio.cs",
+              "RelativeDocumentMoniker": "Models\\Accesorio.cs",
+              "ToolTip": "C:\\Progra-avanzada-Web\\Consecionario\\Models\\Accesorio.cs",
+              "RelativeToolTip": "Models\\Accesorio.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-23T06:40:10.204Z"
+              "WhenOpened": "2026-10-23T06:56:03.349Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 24,
               "Title": "20261112082830_InitialCreate.cs",
-              "DocumentMoniker": "D:\\U NET CORE\\Progra-avanzada-Web\\Consecionario\\Migrations\\20261112082830_InitialCreate.cs",
+              "DocumentMoniker": "C:\\Progra-avanzada-Web\\Consecionario\\Migrations\\20261112082830_InitialCreate.cs",
               "RelativeDocumentMoniker": "Migrations\\20261112082830_InitialCreate.cs",
-              "ToolTip": "D:\\U NET CORE\\Progra-avanzada-Web\\Consecionario\\Migrations\\20261112082830_InitialCreate.cs",
+              "ToolTip": "C:\\Progra-avanzada-Web\\Consecionario\\Migrations\\20261112082830_InitialCreate.cs",
               "RelativeToolTip": "Migrations\\20261112082830_InitialCreate.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAABLAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -445,11 +487,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 23,
               "Title": "Venta.cs",
-              "DocumentMoniker": "D:\\U NET CORE\\Progra-avanzada-Web\\Consecionario\\Models\\Venta.cs",
+              "DocumentMoniker": "C:\\Progra-avanzada-Web\\Consecionario\\Models\\Venta.cs",
               "RelativeDocumentMoniker": "Models\\Venta.cs",
-              "ToolTip": "D:\\U NET CORE\\Progra-avanzada-Web\\Consecionario\\Models\\Venta.cs",
+              "ToolTip": "C:\\Progra-avanzada-Web\\Consecionario\\Models\\Venta.cs",
               "RelativeToolTip": "Models\\Venta.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -457,11 +499,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 25,
               "Title": "Usuario.cs",
-              "DocumentMoniker": "D:\\U NET CORE\\Progra-avanzada-Web\\Consecionario\\Models\\Usuario.cs",
+              "DocumentMoniker": "C:\\Progra-avanzada-Web\\Consecionario\\Models\\Usuario.cs",
               "RelativeDocumentMoniker": "Models\\Usuario.cs",
-              "ToolTip": "D:\\U NET CORE\\Progra-avanzada-Web\\Consecionario\\Models\\Usuario.cs",
+              "ToolTip": "C:\\Progra-avanzada-Web\\Consecionario\\Models\\Usuario.cs",
               "RelativeToolTip": "Models\\Usuario.cs",
               "ViewState": "AgIAAA8AAAAAAAAAAAAgwB8AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -469,11 +511,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 27,
               "Title": "Vehiculo.cs",
-              "DocumentMoniker": "D:\\U NET CORE\\Progra-avanzada-Web\\Consecionario\\Models\\Vehiculo.cs",
+              "DocumentMoniker": "C:\\Progra-avanzada-Web\\Consecionario\\Models\\Vehiculo.cs",
               "RelativeDocumentMoniker": "Models\\Vehiculo.cs",
-              "ToolTip": "D:\\U NET CORE\\Progra-avanzada-Web\\Consecionario\\Models\\Vehiculo.cs",
+              "ToolTip": "C:\\Progra-avanzada-Web\\Consecionario\\Models\\Vehiculo.cs",
               "RelativeToolTip": "Models\\Vehiculo.cs",
               "ViewState": "AgIAABMAAAAAAAAAAAA1wBcAAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -481,23 +523,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\U NET CORE\\Progra-avanzada-Web\\Consecionario\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "D:\\U NET CORE\\Progra-avanzada-Web\\Consecionario\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-10-23T06:40:19.118Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 28,
               "Title": "Agenda.cshtml",
-              "DocumentMoniker": "D:\\U NET CORE\\Progra-avanzada-Web\\Consecionario\\Views\\Mecanica\\Agenda.cshtml",
+              "DocumentMoniker": "C:\\Progra-avanzada-Web\\Consecionario\\Views\\Mecanica\\Agenda.cshtml",
               "RelativeDocumentMoniker": "Views\\Mecanica\\Agenda.cshtml",
-              "ToolTip": "D:\\U NET CORE\\Progra-avanzada-Web\\Consecionario\\Views\\Mecanica\\Agenda.cshtml",
+              "ToolTip": "C:\\Progra-avanzada-Web\\Consecionario\\Views\\Mecanica\\Agenda.cshtml",
               "RelativeToolTip": "Views\\Mecanica\\Agenda.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -505,11 +535,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 29,
               "Title": "Edit.cshtml",
-              "DocumentMoniker": "D:\\U NET CORE\\Progra-avanzada-Web\\Consecionario\\Views\\Vehiculos\\Edit.cshtml",
+              "DocumentMoniker": "C:\\Progra-avanzada-Web\\Consecionario\\Views\\Vehiculos\\Edit.cshtml",
               "RelativeDocumentMoniker": "Views\\Vehiculos\\Edit.cshtml",
-              "ToolTip": "D:\\U NET CORE\\Progra-avanzada-Web\\Consecionario\\Views\\Vehiculos\\Edit.cshtml",
+              "ToolTip": "C:\\Progra-avanzada-Web\\Consecionario\\Views\\Vehiculos\\Edit.cshtml",
               "RelativeToolTip": "Views\\Vehiculos\\Edit.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -517,11 +547,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 30,
               "Title": "AccessDeni.cshtml",
-              "DocumentMoniker": "D:\\U NET CORE\\Progra-avanzada-Web\\Consecionario\\Views\\Account\\AccessDeni.cshtml",
+              "DocumentMoniker": "C:\\Progra-avanzada-Web\\Consecionario\\Views\\Account\\AccessDeni.cshtml",
               "RelativeDocumentMoniker": "Views\\Account\\AccessDeni.cshtml",
-              "ToolTip": "D:\\U NET CORE\\Progra-avanzada-Web\\Consecionario\\Views\\Account\\AccessDeni.cshtml",
+              "ToolTip": "C:\\Progra-avanzada-Web\\Consecionario\\Views\\Account\\AccessDeni.cshtml",
               "RelativeToolTip": "Views\\Account\\AccessDeni.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -529,11 +559,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 31,
               "Title": "Registro.cshtml",
-              "DocumentMoniker": "D:\\U NET CORE\\Progra-avanzada-Web\\Consecionario\\Views\\Account\\Registro.cshtml",
+              "DocumentMoniker": "C:\\Progra-avanzada-Web\\Consecionario\\Views\\Account\\Registro.cshtml",
               "RelativeDocumentMoniker": "Views\\Account\\Registro.cshtml",
-              "ToolTip": "D:\\U NET CORE\\Progra-avanzada-Web\\Consecionario\\Views\\Account\\Registro.cshtml",
+              "ToolTip": "C:\\Progra-avanzada-Web\\Consecionario\\Views\\Account\\Registro.cshtml",
               "RelativeToolTip": "Views\\Account\\Registro.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -541,11 +571,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 32,
               "Title": "Login.cshtml",
-              "DocumentMoniker": "D:\\U NET CORE\\Progra-avanzada-Web\\Consecionario\\Views\\Account\\Login.cshtml",
+              "DocumentMoniker": "C:\\Progra-avanzada-Web\\Consecionario\\Views\\Account\\Login.cshtml",
               "RelativeDocumentMoniker": "Views\\Account\\Login.cshtml",
-              "ToolTip": "D:\\U NET CORE\\Progra-avanzada-Web\\Consecionario\\Views\\Account\\Login.cshtml",
+              "ToolTip": "C:\\Progra-avanzada-Web\\Consecionario\\Views\\Account\\Login.cshtml",
               "RelativeToolTip": "Views\\Account\\Login.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",

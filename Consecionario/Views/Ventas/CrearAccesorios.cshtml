@@ -1,0 +1,167 @@
+@model VentaAccesoriosDto
+@{
+    ViewData["Title"] = "Vender accesorios";
+    var accesorios = (List<Accesorio>)ViewBag.Accesorios;
+    var metodos = (string[])ViewBag.Metodos;
+}
+
+<div class="row justify-content-center">
+    <div class="col-lg-9">
+        <div class="card">
+            <div class="card-header card-header-black">
+                <h5 class="mb-0"><i class="bi bi-gear"></i> Vender accesorios</h5>
+            </div>
+            <div class="card-body p-4">
+                <form asp-action="CrearAccesorios" method="post" id="formVenta">
+                    <div asp-validation-summary="ModelOnly" class="alert alert-danger"></div>
+
+                    <div class="row">
+                        <div class="col-md-7 mb-3">
+                            <label asp-for="ClienteId" class="form-label">Cliente</label>
+                            <select asp-for="ClienteId" class="form-select" asp-items="@((List<SelectListItem>)ViewBag.Clientes)">
+                                <option value="">Seleccione un cliente...</option>
+                            </select>
+                            <span asp-validation-for="ClienteId" class="text-danger small"></span>
+                        </div>
+                        <div class="col-md-5 mb-3">
+                            <label asp-for="MetodoPago" class="form-label">Método de pago</label>
+                            <select asp-for="MetodoPago" class="form-select">
+                                <option value="">Seleccione...</option>
+                                @foreach (var m in metodos)
+                                {
+                                    <option value="@m" selected="@(m == Model.MetodoPago)">@m</option>
+                                }
+                            </select>
+                            <span asp-validation-for="MetodoPago" class="text-danger small"></span>
+                        </div>
+                    </div>
+
+                    <h6 class="mt-2">Accesorios</h6>
+                    <span asp-validation-for="Lineas" class="text-danger small d-block mb-1"></span>
+                    <div class="table-responsive">
+                        <table class="table align-middle" id="tablaLineas">
+                            <thead>
+                                <tr>
+                                    <th style="width:50%">Accesorio</th>
+                                    <th style="width:15%">Cantidad</th>
+                                    <th class="text-end">Subtotal</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody id="cuerpoLineas">
+                                @for (var i = 0; i < Model.Lineas.Count; i++)
+                                {
+                                    <tr class="fila-linea">
+                                        <td>
+                                            <select asp-for="Lineas[i].AccesorioId" class="form-select sel-acc">
+                                                <option value="" data-precio="0">Seleccione...</option>
+                                                @foreach (var a in accesorios)
+                                                {
+                                                    <option value="@a.Id" data-precio="@a.Precio.ToString(System.Globalization.CultureInfo.InvariantCulture)" selected="@(a.Id == Model.Lineas[i].AccesorioId)">@a.Nombre · $@a.Precio.ToString("0.##", System.Globalization.CultureInfo.InvariantCulture) · stock @a.Stock</option>
+                                                }
+                                            </select>
+                                            <span asp-validation-for="Lineas[i].AccesorioId" class="text-danger small"></span>
+                                        </td>
+                                        <td>
+                                            <input asp-for="Lineas[i].Cantidad" type="number" class="form-control inp-cant" />
+                                            <span asp-validation-for="Lineas[i].Cantidad" class="text-danger small"></span>
+                                        </td>
+                                        <td class="text-end subtotal">$0</td>
+                                        <td class="text-end"><button type="button" class="btn btn-sm btn-outline-danger btn-quitar" title="Quitar"><i class="bi bi-trash"></i></button></td>
+                                    </tr>
+                                }
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td colspan="2" class="text-end"><strong>Total</strong></td>
+                                    <td class="text-end"><strong id="totalVenta">$0</strong></td>
+                                    <td></td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                    <button type="button" id="btnAgregar" class="btn btn-sm btn-outline-red-custom mb-4"><i class="bi bi-plus-lg"></i> Agregar accesorio</button>
+
+                    <div class="mb-4">
+                        <label asp-for="Notas" class="form-label">Notas (opcional)</label>
+                        <textarea asp-for="Notas" class="form-control" rows="2"></textarea>
+                    </div>
+
+                    <div class="d-flex gap-2">
+                        <button type="submit" class="btn btn-red-custom">Registrar venta</button>
+                        <a asp-action="Index" class="btn btn-outline-secondary">Cancelar</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<template id="plantillaLinea">
+    <tr class="fila-linea">
+        <td>
+            <select name="Lineas[__i__].AccesorioId" class="form-select sel-acc">
+                <option value="" data-precio="0">Seleccione...</option>
+                @foreach (var a in accesorios)
+                {
+                    <option value="@a.Id" data-precio="@a.Precio.ToString(System.Globalization.CultureInfo.InvariantCulture)">@a.Nombre · $@a.Precio.ToString("0.##", System.Globalization.CultureInfo.InvariantCulture) · stock @a.Stock</option>
+                }
+            </select>
+        </td>
+        <td><input name="Lineas[__i__].Cantidad" type="number" class="form-control inp-cant" /></td>
+        <td class="text-end subtotal">$0</td>
+        <td class="text-end"><button type="button" class="btn btn-sm btn-outline-danger btn-quitar" title="Quitar"><i class="bi bi-trash"></i></button></td>
+    </tr>
+</template>
+
+@section Scripts {
+    <script>
+        const cuerpo = document.getElementById("cuerpoLineas");
+        const plantilla = document.getElementById("plantillaLinea");
+        const totalEl = document.getElementById("totalVenta");
+        const fmt = n => "$" + (Math.round(n * 100) / 100).toLocaleString("en-US");
+
+        function recalcular() {
+            let total = 0;
+            cuerpo.querySelectorAll(".fila-linea").forEach(function (fila) {
+                const sel = fila.querySelector(".sel-acc");
+                const precio = parseFloat(sel.options[sel.selectedIndex]?.dataset.precio || "0");
+                const cant = parseInt(fila.querySelector(".inp-cant").value || "0", 10);
+                const sub = (cant > 0 ? cant : 0) * precio;
+                fila.querySelector(".subtotal").textContent = fmt(sub);
+                total += sub;
+            });
+            totalEl.textContent = fmt(total);
+        }
+
+        // Los índices deben ser consecutivos (0, 1, 2...) para que el servidor reciba la lista completa
+        function renumerar() {
+            cuerpo.querySelectorAll(".fila-linea").forEach(function (fila, i) {
+                fila.querySelectorAll("[name]").forEach(function (el) {
+                    el.name = el.name.replace(/Lineas\[\d+\]/, "Lineas[" + i + "]");
+                });
+            });
+        }
+
+        document.getElementById("btnAgregar").addEventListener("click", function () {
+            const i = cuerpo.querySelectorAll(".fila-linea").length;
+            cuerpo.insertAdjacentHTML("beforeend", plantilla.innerHTML.replaceAll("__i__", i));
+            recalcular();
+        });
+
+        cuerpo.addEventListener("click", function (e) {
+            const btn = e.target.closest(".btn-quitar");
+            if (!btn) return;
+            if (cuerpo.querySelectorAll(".fila-linea").length > 1) {
+                btn.closest(".fila-linea").remove();
+                renumerar();
+                recalcular();
+            }
+        });
+
+        cuerpo.addEventListener("input", recalcular);
+        cuerpo.addEventListener("change", recalcular);
+        document.getElementById("formVenta").addEventListener("submit", renumerar);
+        recalcular();
+    </script>
+}

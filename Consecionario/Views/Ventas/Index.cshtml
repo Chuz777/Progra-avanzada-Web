@@ -1,5 +1,97 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
+@model List<Venta>
 @{
+    var f = (FiltroVentasDto)ViewBag.Filtro;
+    bool esPersonal = ViewBag.EsPersonal;
+    ViewData["Title"] = esPersonal ? "Ventas" : "Mis compras";
+    var cr = new System.Globalization.CultureInfo("es-CR");
+    var totalListado = Model.Where(v => !v.Anulada).Sum(v => v.TotalVenta);
 }
+
+<div class="d-flex justify-content-between align-items-center mb-4 flex-wrap gap-2">
+    <h2 class="page-title mb-0">@(esPersonal ? "Ventas" : "Mis compras")</h2>
+    @if (esPersonal)
+    {
+        <div class="d-flex gap-2">
+            <a asp-action="CrearUnidad" class="btn btn-sm btn-red-custom"><i class="bi bi-car-front"></i> Vender vehículo o moto</a>
+            <a asp-action="CrearAccesorios" class="btn btn-sm btn-red-custom"><i class="bi bi-gear"></i> Vender accesorios</a>
+        </div>
+    }
+</div>
+
+<div class="card mb-4">
+    <div class="card-body">
+        <form asp-action="Index" method="get" class="row g-2 align-items-end">
+            <div class="col-md-2">
+                <label class="form-label" for="Desde">Desde</label>
+                <input type="date" id="Desde" name="Desde" value="@(f.Desde?.ToString("yyyy-MM-dd"))" class="form-control" />
+            </div>
+            <div class="col-md-2">
+                <label class="form-label" for="Hasta">Hasta</label>
+                <input type="date" id="Hasta" name="Hasta" value="@(f.Hasta?.ToString("yyyy-MM-dd"))" class="form-control" />
+            </div>
+            <div class="col-md-2">
+                <label class="form-label" for="Tipo">Tipo</label>
+                <select id="Tipo" name="Tipo" class="form-select">
+                    <option value="">Todos</option>
+                    <option value="Vehiculo" selected="@(f.Tipo == "Vehiculo")">Vehículo</option>
+                    <option value="Moto" selected="@(f.Tipo == "Moto")">Moto</option>
+                    <option value="Accesorio" selected="@(f.Tipo == "Accesorio")">Accesorio</option>
+                </select>
+            </div>
+            @if (esPersonal)
+            {
+                <div class="col-md-3">
+                    <label class="form-label" for="Cliente">Cliente</label>
+                    <input type="text" id="Cliente" name="Cliente" value="@f.Cliente" class="form-control" placeholder="Nombre del cliente" />
+                </div>
+            }
+            <div class="col-md-3 d-flex gap-2">
+                <button type="submit" class="btn btn-red-custom flex-fill"><i class="bi bi-funnel"></i> Filtrar</button>
+                <a asp-action="Index" class="btn btn-outline-secondary">Limpiar</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="card">
+    <div class="table-responsive">
+        <table class="table table-hover align-middle mb-0">
+            <thead>
+                <tr>
+                    <th>Fecha</th>
+                    <th>Cliente</th>
+                    <th>Producto</th>
+                    <th class="text-end">Total</th>
+                    <th>Vendedor</th>
+                    <th>Estado</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (!Model.Any())
+                {
+                    <tr><td colspan="7" class="text-center text-muted py-4">No se encontraron ventas.</td></tr>
+                }
+                @foreach (var v in Model)
+                {
+                    <tr class="@(v.Anulada ? "text-muted" : "")">
+                        <td class="text-nowrap">@v.FechaVenta.ToString("dd/MM/yyyy HH:mm")</td>
+                        <td>@v.ClienteNombre</td>
+                        <td>@v.Descripcion</td>
+                        <td class="text-end text-nowrap">@v.TotalVenta.ToString("C0", cr)</td>
+                        <td>@(v.Vendedor?.Nombre ?? "—")</td>
+                        <td>
+                            @if (v.Anulada) { <span class="badge bg-secondary">Anulada</span> }
+                            else { <span class="badge bg-success">Registrada</span> }
+                        </td>
+                        <td class="text-end"><a asp-action="Detalles" asp-route-id="@v.Id" class="btn btn-sm btn-outline-secondary" title="Detalle"><i class="bi bi-eye"></i></a></td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+    <div class="card-footer bg-white d-flex justify-content-between">
+        <span class="text-muted small">@Model.Count venta(s)</span>
+        <strong>Total (sin anuladas): @totalListado.ToString("C0", cr)</strong>
+    </div>
+</div>
