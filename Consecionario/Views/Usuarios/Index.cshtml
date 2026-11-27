@@ -1,0 +1,98 @@
+@model PaginaResultadoDto<UsuarioListaDto>
+@{
+    ViewData["Title"] = "Usuarios";
+    string? texto = ViewBag.Texto as string;
+    string? rolFiltro = ViewBag.Rol as string;
+    int idActual = ViewBag.IdActual;
+}
+
+<div class="d-flex justify-content-between align-items-center mb-4">
+    <h2 class="page-title mb-0">Usuarios</h2>
+    <a asp-action="Create" class="btn btn-red-custom"><i class="bi bi-plus-lg"></i> Crear usuario</a>
+</div>
+
+<div class="card mb-4">
+    <div class="card-body">
+        <form asp-action="Index" method="get" class="row g-2 align-items-end">
+            <div class="col-md-6">
+                <label class="form-label" for="texto">Buscar por nombre o correo</label>
+                <input type="text" id="texto" name="texto" value="@texto" class="form-control" placeholder="Ej.: Carlos" />
+            </div>
+            <div class="col-md-3">
+                <label class="form-label" for="rol">Rol</label>
+                <select id="rol" name="rol" class="form-select">
+                    <option value="">Todos</option>
+                    @foreach (var r in RolesSistema.Todos)
+                    {
+                        <option value="@r" selected="@(r == rolFiltro)">@r</option>
+                    }
+                </select>
+            </div>
+            <div class="col-md-3 d-flex gap-2">
+                <button type="submit" class="btn btn-red-custom flex-fill"><i class="bi bi-search"></i> Filtrar</button>
+                <a asp-action="Index" class="btn btn-outline-secondary">Limpiar</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="card">
+    <div class="table-responsive">
+        <table class="table table-hover align-middle mb-0">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Correo</th>
+                    <th>Rol</th>
+                    <th>Estado</th>
+                    <th class="text-end">Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (!Model.Items.Any())
+                {
+                    <tr><td colspan="5" class="text-center text-muted py-4">No se encontraron usuarios.</td></tr>
+                }
+                @foreach (var u in Model.Items)
+                {
+                    <tr>
+                        <td>
+                            @u.Nombre
+                            @if (u.Id == idActual) { <span class="badge bg-light text-dark border">Usted</span> }
+                        </td>
+                        <td>@u.Email</td>
+                        <td><span class="badge badge-rol-@u.Rol.ToLower()">@u.Rol</span></td>
+                        <td>
+                            @if (u.Activo) { <span class="badge bg-success">Activo</span> }
+                            else { <span class="badge bg-secondary">Inactivo</span> }
+                        </td>
+                        <td class="text-end text-nowrap">
+                            <a asp-action="Details" asp-route-id="@u.Id" class="btn btn-sm btn-outline-secondary" title="Detalle"><i class="bi bi-eye"></i></a>
+                            <a asp-action="Edit" asp-route-id="@u.Id" class="btn btn-sm btn-outline-secondary" title="Editar"><i class="bi bi-pencil"></i></a>
+                            <a asp-action="Delete" asp-route-id="@u.Id" class="btn btn-sm btn-outline-red-custom" title="Eliminar"><i class="bi bi-trash"></i></a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+    <div class="card-footer bg-white d-flex justify-content-between align-items-center flex-wrap gap-2">
+        <span class="text-muted small">@Model.TotalRegistros usuario(s) - Página @Model.PaginaActual de @Model.TotalPaginas</span>
+        <nav aria-label="Paginación de usuarios">
+            <ul class="pagination pagination-sm mb-0">
+                <li class="page-item @(Model.TienePaginaAnterior ? "" : "disabled")">
+                    <a class="page-link" asp-action="Index" asp-route-pagina="@(Model.PaginaActual - 1)" asp-route-texto="@texto" asp-route-rol="@rolFiltro">Anterior</a>
+                </li>
+                @for (var p = 1; p <= Model.TotalPaginas; p++)
+                {
+                    <li class="page-item @(p == Model.PaginaActual ? "active" : "")">
+                        <a class="page-link" asp-action="Index" asp-route-pagina="@p" asp-route-texto="@texto" asp-route-rol="@rolFiltro">@p</a>
+                    </li>
+                }
+                <li class="page-item @(Model.TienePaginaSiguiente ? "" : "disabled")">
+                    <a class="page-link" asp-action="Index" asp-route-pagina="@(Model.PaginaActual + 1)" asp-route-texto="@texto" asp-route-rol="@rolFiltro">Siguiente</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</div>

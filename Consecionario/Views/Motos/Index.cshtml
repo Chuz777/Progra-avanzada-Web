@@ -1,5 +1,37 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
+@model IEnumerable<Moto>
 @{
+    ViewData["Title"] = "Motos";
+    var hayFiltro = (FiltroCatalogoDto)ViewBag.Filtro;
+}
+
+<div class="d-flex justify-content-between align-items-center mb-4">
+    <h2 class="page-title mb-0">Motos</h2>
+    @if (User.IsInRole(RolesSistema.Admin) || User.IsInRole(RolesSistema.Dependiente))
+    {
+        <a asp-controller="Home" asp-action="CrearItem" asp-route-tipo="Moto" class="btn btn-sm btn-red-custom">
+            <i class="bi bi-plus-circle"></i> Nueva Moto
+        </a>
+    }
+</div>
+
+<partial name="_FiltrosCatalogo" />
+
+@if (!Model.Any())
+{
+    <div class="card"><div class="card-body text-center text-muted py-5">
+        @(string.IsNullOrWhiteSpace(hayFiltro.Marca) && !hayFiltro.PrecioMax.HasValue && string.IsNullOrWhiteSpace(hayFiltro.Estado)
+            ? "Aún no hay motos registradas."
+            : "No hay motos que coincidan con los filtros.")
+    </div></div>
+}
+else
+{
+    <div class="row g-3">
+        @foreach (var m in Model)
+        {
+            <div class="col-sm-6 col-lg-3">
+                <partial name="_TarjetaCatalogo" model="@((m.Id, "Motos", $"{m.Marca} {m.Modelo}", $"{m.Anio} · {m.CilindrajeCC} cc", m.Precio, m.Estado, m.ImagenUrl, "bi-bicycle"))" />
+            </div>
+        }
+    </div>
 }

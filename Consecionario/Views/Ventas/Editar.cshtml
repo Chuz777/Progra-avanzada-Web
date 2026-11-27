@@ -1,0 +1,37 @@
+@model Venta
+@{
+    ViewData["Title"] = $"Editar venta #{Model.Id}";
+    var metodos = (string[])ViewBag.Metodos;
+}
+
+<div class="row justify-content-center">
+    <div class="col-md-8 col-lg-6">
+        <div class="card">
+            <div class="card-header card-header-black">
+                <h5 class="mb-0"><i class="bi bi-pencil-square"></i> Editar venta #@Model.Id</h5>
+            </div>
+            <div class="card-body p-4">
+                <p class="text-muted small">@Model.ClienteNombre · @Model.Descripcion</p>
+                <form asp-action="Editar" asp-route-id="@Model.Id" method="post">
+                    <div class="mb-3">
+                        <label class="form-label" for="metodoPago">Método de pago</label>
+                        <select id="metodoPago" name="metodoPago" class="form-select">
+                            @foreach (var m in metodos)
+                            {
+                                <option value="@m" selected="@(m == Model.MetodoPago)">@m</option>
+                            }
+                        </select>
+                    </div>
+                    <div class="mb-4">
+                        <label class="form-label" for="notas">Notas</label>
+                        <textarea id="notas" name="notas" class="form-control" rows="3">@Model.Notas</textarea>
+                    </div>
+                    <div class="d-flex gap-2">
+                        <button type="submit" class="btn btn-red-custom">Guardar cambios</button>
+                        <a asp-action="Detalles" asp-route-id="@Model.Id" class="btn btn-outline-secondary">Cancelar</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,67 @@
+@model Venta
+@{
+    ViewData["Title"] = $"Venta #{Model.Id}";
+    var cr = new System.Globalization.CultureInfo("en-US");
+}
+
+<div class="row justify-content-center">
+    <div class="col-lg-9">
+        <div class="card">
+            <div class="card-header card-header-black d-flex justify-content-between align-items-center">
+                <h5 class="mb-0"><i class="bi bi-receipt"></i> Venta #@Model.Id</h5>
+                @if (Model.Anulada) { <span class="badge bg-secondary">Anulada</span> }
+                else { <span class="badge bg-success">Registrada</span> }
+            </div>
+            <div class="card-body p-4">
+                <dl class="row mb-0">
+                    <dt class="col-sm-4">Fecha</dt><dd class="col-sm-8">@Model.FechaVenta.ToString("dd/MM/yyyy HH:mm")</dd>
+                    <dt class="col-sm-4">Cliente</dt><dd class="col-sm-8">@Model.ClienteNombre</dd>
+                    <dt class="col-sm-4">Vendedor</dt><dd class="col-sm-8">@(Model.Vendedor?.Nombre ?? "—")</dd>
+                    <dt class="col-sm-4">Tipo</dt><dd class="col-sm-8">@Model.Tipo</dd>
+                    <dt class="col-sm-4">Producto</dt><dd class="col-sm-8">@Model.Descripcion</dd>
+                    <dt class="col-sm-4">Método de pago</dt><dd class="col-sm-8">@Model.MetodoPago</dd>
+                    <dt class="col-sm-4">Notas</dt><dd class="col-sm-8">@(string.IsNullOrWhiteSpace(Model.Notas) ? "—" : Model.Notas)</dd>
+                    <dt class="col-sm-4">Total</dt><dd class="col-sm-8"><strong class="text-red-custom">@Model.TotalVenta.ToString("C2", cr)</strong></dd>
+                    @if (Model.Anulada)
+                    {
+                        <dt class="col-sm-4">Anulada el</dt><dd class="col-sm-8">@Model.FechaAnulacion?.ToString("dd/MM/yyyy HH:mm")</dd>
+                    }
+                </dl>
+
+                @if (Model.Lineas.Any())
+                {
+                    <h6 class="mt-4">Accesorios</h6>
+                    <div class="table-responsive">
+                        <table class="table table-sm align-middle">
+                            <thead><tr><th>Accesorio</th><th class="text-end">Cantidad</th><th class="text-end">Precio</th><th class="text-end">Subtotal</th></tr></thead>
+                            <tbody>
+                                @foreach (var l in Model.Lineas)
+                                {
+                                    <tr>
+                                        <td>@(l.Accesorio?.Nombre ?? "—")</td>
+                                        <td class="text-end">@l.Cantidad</td>
+                                        <td class="text-end">@l.PrecioUnitario.ToString("C2", cr)</td>
+                                        <td class="text-end">@l.Subtotal.ToString("C2", cr)</td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                }
+            </div>
+            <div class="card-footer bg-white d-flex justify-content-between flex-wrap gap-2">
+                <a asp-action="Index" class="btn btn-outline-secondary"><i class="bi bi-arrow-left"></i> Volver</a>
+                @if (User.IsInRole(RolesSistema.Admin) && !Model.Anulada)
+                {
+                    <div class="d-flex gap-2">
+                        <a asp-action="Editar" asp-route-id="@Model.Id" class="btn btn-outline-warning"><i class="bi bi-pencil"></i> Editar pago y notas</a>
+                        <form asp-action="Anular" asp-route-id="@Model.Id" method="post" class="d-inline"
+                              onsubmit="return confirm('¿Anular esta venta? La unidad volverá a Disponible o el stock se restituirá.');">
+                            <button type="submit" class="btn btn-red-custom"><i class="bi bi-x-circle"></i> Anular venta</button>
+                        </form>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>

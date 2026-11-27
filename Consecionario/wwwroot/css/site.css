@@ -1,22 +1,121 @@
-html {
-  font-size: 14px;
-}
-
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
-}
-
-.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+/* ConcesionarioN - estilo base (tomado del prototipo HTML) */
+:root {
+  --color-negro: #121212;
+  --color-gris-claro: #f2f3f5;
+  --color-rojo: #d90429;
+  --color-rojo-hover: #b00321;
 }
 
 html {
+  font-size: 15px;
   position: relative;
   min-height: 100%;
 }
 
-body {
-  margin-bottom: 60px;
+@media (min-width: 768px) {
+  html { font-size: 16px; }
 }
+
+body {
+  background-color: var(--color-gris-claro);
+  margin-bottom: 60px;
+  color: #212529;
+}
+
+.bg-black-custom { background-color: var(--color-negro) !important; }
+.border-bottom-red { border-bottom: 3px solid var(--color-rojo); }
+.text-red-custom { color: var(--color-rojo) !important; }
+
+.navbar-brand { font-weight: 700; letter-spacing: .5px; }
+.navbar .nav-link { color: rgba(255,255,255,.8); }
+.navbar .nav-link:hover,
+.navbar .nav-link.active { color: #fff; }
+
+.btn-red-custom {
+  background-color: var(--color-rojo);
+  border-color: var(--color-rojo);
+  color: #fff;
+}
+.btn-red-custom:hover,
+.btn-red-custom:focus {
+  background-color: var(--color-rojo-hover);
+  border-color: var(--color-rojo-hover);
+  color: #fff;
+}
+.btn-outline-red-custom {
+  border-color: var(--color-rojo);
+  color: var(--color-rojo);
+}
+.btn-outline-red-custom:hover {
+  background-color: var(--color-rojo);
+  color: #fff;
+}
+
+.card { border: 0; box-shadow: 0 2px 8px rgba(0,0,0,.08); }
+.card-header-black {
+  background-color: var(--color-negro);
+  color: #fff;
+  border-bottom: 3px solid var(--color-rojo);
+}
+
+.form-control:focus,
+.form-select:focus,
+.btn:focus,
+.btn:active:focus,
+.form-check-input:focus {
+  border-color: var(--color-rojo);
+  box-shadow: 0 0 0 .2rem rgba(217, 4, 41, .2);
+}
+
+.page-title { font-weight: 700; }
+.page-title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: var(--color-rojo);
+  margin-top: .4rem;
+}
+
+.table thead th {
+  background-color: var(--color-negro);
+  color: #fff;
+  border-color: var(--color-negro);
+  white-space: nowrap;
+}
+
+.page-link { color: var(--color-negro); }
+.page-item.active .page-link {
+  background-color: var(--color-rojo);
+  border-color: var(--color-rojo);
+  color: #fff;
+}
+
+.badge-rol-admin { background-color: var(--color-rojo); }
+.badge-rol-dependiente { background-color: var(--color-negro); }
+.badge-rol-cliente { background-color: #6c757d; }
+
+.hero {
+  background: var(--color-negro);
+  color: #fff;
+  border-bottom: 4px solid var(--color-rojo);
+  border-radius: .5rem;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  line-height: 60px;
+  background-color: var(--color-negro);
+  color: #adb5bd;
+  border-top: 3px solid var(--color-rojo);
+}
+
+/* Tarjetas de catálogo (inicio, vehículos y motos) */
+.catalogo-card { overflow: hidden; transition: transform .15s ease, box-shadow .15s ease; }
+.catalogo-card:hover { transform: translateY(-3px); box-shadow: 0 6px 16px rgba(0,0,0,.15); }
+.catalogo-img-wrap { position: relative; height: 180px; background: #e4e6ea; }
+.catalogo-img, .catalogo-placeholder { position: absolute; inset: 0; width: 100%; height: 100%; }
+.catalogo-img { object-fit: cover; }
+.catalogo-placeholder { display: flex; align-items: center; justify-content: center; font-size: 3.5rem; color: #adb5bd; }
